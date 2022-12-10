@@ -1,7 +1,54 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-})
+import vue from "@vitejs/plugin-vue";
+/* import envCompatible from 'vite-plugin-env-compatible'
+ */
+/*   import zhCn from 'element-plus/dist/locale/pt-br.mjs'
+ */
+export default ({ command }) => {
+  if (command === "serve") {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: [{ find: "@", replacement: "/src" }],
+      },
+      server: {
+        host: true,
+        port: 3000,
+        hmr: { clientPort: 80 },
+      },
+    };
+  } else if (command === "build") {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: [{ find: "@", replacement: "/src" }],
+      },
+      server: {
+        host: "0.0.0.0",
+        port: 5000,
+        https: true,
+        hmr: { host: "https://feeder.alvitre.com.br", port: 443 },
+      },
+      build: {
+        target: "esnext",
+        chunkSizeWarningLimit: 2000,
+      },
+    };
+  } else if (command === "testbuild") {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: [{ find: "@", replacement: "/src" }],
+      },
+      server: {
+        host: "0.0.0.0",
+        port: 5000,
+        https: true,
+        hmr: { host: "http://feeder.localhost", port: 443 },
+      },
+      build: {
+        target: "esnext",
+        chunkSizeWarningLimit: 2000,
+      },
+    };
+  }
+};

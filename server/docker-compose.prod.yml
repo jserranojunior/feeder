@@ -1,0 +1,22 @@
+version: "3"
+
+networks:
+  stack_ponte:
+    external: true
+
+services:
+  frontend_feeder_prod:
+    container_name: "frontend_feeder_prod"
+    image: "webdevops/apache:latest"
+    restart: always
+    working_dir: /app
+    volumes:
+      - ${PATHCLIENTES}/feeder/frontend/dist:/app
+    networks:
+      - stack_ponte
+    ports:
+      - "85:80"
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.feeder.rule=Host(`feeder.${DOMAIN}`,`www.feeder.org`,`feeder.org`)
+      - traefik.http.services.feeder.loadbalancer.server.port=80

@@ -1,0 +1,56 @@
+version: "3"
+
+networks:
+  stack_ponte:
+    external: true
+
+services:
+  golangacolher:
+    container_name: "golangacolher"
+    image: golang:1.17.6
+    working_dir: /app
+    volumes:
+      - ${PATHCLIENTES}/instituto_acolher/backgo:/app
+      # - ${GOPATH}:/go
+    ports:
+      - "3030:8000"
+    networks:
+      - stack_ponte
+    command: "/bin/sh -c 'go install github.com/cespare/reflex@latest && cd /app && reflex -c /app/reflex.conf'"
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.gobackacolher.rule=Host(`gobackacolher.${DOMAIN}`)
+      - traefik.http.services.gobackacolher.loadbalancer.server.port=8000
+
+  frontend_acolher:
+    container_name: "frontend_acolher"
+    image: "node:lts-alpine"
+    working_dir: /app
+    volumes:
+      - "${PATHCLIENTES}/instituto_acolher/front:/app"
+    command: "yarn dev"
+    networks:
+      - stack_ponte
+    ports:
+      - "3080:3000"
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.frontacolher.rule=Host(`frontacolher.${DOMAIN}`)
+      - traefik.http.services.frontacolher.loadbalancer.server.port=3000
+
+  acolher_back:
+    container_name: acolher_back
+    image: "bitnami/laravel:8.6.8-debian-10-r11"
+    # build: ../
+    working_dir: /usr/share/nginx/html
+    volumes:
+      - ${PATHCLIENTES}/instituto_acolher/back:/usr/share/nginx/html
+    command: "/bin/sh -c  'php artisan serve --host=0.0.0.0 --port=2030'"
+    ports:
+      - "2030:2030"
+    networks:
+      - stack_ponte
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.phpbackacolher.rule=Host(`phpbackacolher.${DOMAIN}`)
+      - traefik.http.services.phpbackacolher.loadbalancer.server.port=2030
