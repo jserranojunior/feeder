@@ -15,8 +15,9 @@ services:
     networks:
       - stack_ponte
     ports:
-      - "85:80"
+      - "185:80"
     labels:
       - "traefik.enable=true"
-      - traefik.http.routers.feeder.rule=Host(`feeder.${DOMAIN}`,`www.feeder.org`,`feeder.org`)
+      - traefik.http.routers.feeder.rule=Host(`feeder.${DOMAIN}`)
       - traefik.http.services.feeder.loadbalancer.server.port=80
+      - "traefik.http.routers.feeder.tls.certresolver=le"

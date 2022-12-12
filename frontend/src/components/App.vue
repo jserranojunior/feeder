@@ -34,6 +34,7 @@
               <li><a href="#infraestrutura">Infraestrutura</a></li>
               <li><a href="#clientes">Clientes</a></li>
               <li><a href="#certificados">Certificados</a></li>
+              <li><a href="#premios">Prêmios</a></li>
 
               <li><a>Contato</a></li>
             </ul>
@@ -173,72 +174,175 @@
           <div class="py-4 px-8 mt-4 text-center">
             <span
               class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
-              >Certificados e Prêmios</span
+              >Certificados</span
             >
           </div>
 
           <div
-            class="flex justify-center bg-gradient-to-r from-primary via-green-500 to-blue-400 mt-6"
+            class="flex flex-wrap px-12 justify-center bg-gradient-to-r from-primary via-green-500 to-blue-400 mt-6 mb-6 pb-6"
           >
-            <div class="w-2/3">
-              <div class="flex justify-center px-6 mt-6 mx-auto mb-6">
-                <div class="w-1/3 px-1">
-                  <img src="../assets/images/home/4.png" class="mx-auto" />
-                  <div class="mt-6">
-                    <img
-                      src="../assets/images/certificados/7863ts.jpg"
-                      class="mx-auto mt-1"
-                    />
-                  </div>
+            <div class="w-full px-2">
+              <div class="card w-80 bg-base-100 shadow-xl mt-6 mx-auto">
+                <figure class="p-1">
+                  <img
+                    src="../assets/images/home/4.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="w-1/3">
+              <div class="card w-96 bg-base-100 shadow-xl mt-6 mx-auto">
+                <figure class="p-1">
+                  <img
+                    src="../assets/images/certificados/7863ts.jpg"
+                    alt="Shoes"
+                    class="rounded-xl w-1/3"
+                  />
+                </figure>
+                <div class="card-body items-center text-center p-4">
+                  <h2 class="card-title">
+                    Certificação IATF 16949 <br />
+                    TÜV SÜD
+                  </h2>
+                  <p>
+                    A IATF 16949 especifica os requisitos de um sistema de
+                    gestão de qualidade para a produção automotiva.
+                  </p>
                 </div>
-
-                <div class="w-1/3 px-1">
-                  <div class="card w-auto bg-base-100 shadow-xl px-auto">
-                    <div class="card-body">
-                      <img
-                        src="../assets/images/certificados/1789iso.jpg"
-                        class="mx-auto mt-1"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mt-6">
-                    <img
-                      src="../assets/images/certificados/160qsb.jpg"
-                      class="mx-auto mt-1"
-                    />
-                  </div>
+              </div>
+            </div>
+            <div class="w-1/3">
+              <div class="card w-96 bg-base-100 shadow-xl mt-6 mx-auto">
+                <figure class="p-1">
+                  <img
+                    src="../assets/images/certificados/160qsb.jpg"
+                    alt="Shoes"
+                    class="rounded-xl w-1/2"
+                  />
+                </figure>
+                <div class="card-body items-center text-center p-4">
+                  <h2 class="card-title">
+                    Certificação QSB<br />
+                    Quality System Basics
+                  </h2>
+                  <p>
+                    Este certificado atesta que a empresa encontra-se em
+                    conformidade com os requisitos do QSB FIAT CHRYSLER.
+                  </p>
                 </div>
+              </div>
+            </div>
+            <div class="w-1/3">
+              <div class="card w-96 bg-base-100 shadow-xl mt-6 mx-auto">
+                <figure class="p-1">
+                  <img
+                    src="../assets/images/certificados/1789iso.jpg"
+                    alt="Shoes"
+                    class="rounded-xl w-1/3"
+                  />
+                </figure>
+                <div class="card-body items-center text-center p-4">
+                  <h2 class="card-title">
+                    Certificated of conformit<br />
+                    NBR ISO 9001:2008
+                  </h2>
+                  <p>
+                    ISO 9001:2008 é uma norma internacional que fornece
+                    requisitos para o Sistema de Gestão da Qualidade (SGQ) das
+                    organizações.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <div class="w-1/3 px-1">
-                  <div class="">
-                    <div class="card w-auto bg-base-100 shadow-xl">
-                      <div class="card-body">
+        <section id="premios">
+          <div class="py-4 mt-4 text-center">
+            <span
+              class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
+              >Prêmios</span
+            >
+          </div>
+          <div class="flex px-12 mb-6">
+            <div class="w-1/2 mt-6">
+              <div class="flex flex-wrap justify-center px-4">
+                <div class="card w-auto bg-base-100 shadow-xl px-auto mt-1">
+                  <div class="card-body p-0 py-4">
+                    <h2 class="text-xl font-bold text-center">
+                      O.P.B - Top of Quality Brazil
+                    </h2>
+                    <div class="flex flex-wrap justify-between">
+                      <div class="w-1/2">
                         <img
                           src="../assets/images/premios/p01.png"
                           class="mx-auto mt-1"
                         />
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="card w-auto bg-base-100 shadow-xl px-auto mt-1">
-                    <div class="card-body">
-                      <img
-                        src="../assets/images/premios/p02.png"
-                        class="mx-auto mt-1"
-                      />
+                      <div class="w-1/2">
+                        <img
+                          src="../assets/images/premios/p02.png"
+                          class="mx-auto mt-1"
+                        />
+                      </div>
+                      <div class="w-full px-4 pt-1">
+                        <div
+                          class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400"
+                        >
+                          <div class="card-body text-white py-2">
+                            <p>
+                              O prêmio Top of Quality Brazil, segundo a Cia.
+                              Eventos & Pesquisas, tem por objetivo reconhecer o
+                              alto padrão de excelência e qualidade em serviços
+                              e produtos de empresas e profissionais que atuam
+                              com destaque e credibilidade gerando resultados
+                              positivos no mercado globalizado.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="w-1/3 px-1 mb-6">
-                  <div class="">
-                    <div class="card w-auto bg-base-100 shadow-xl px-auto">
-                      <div class="card-body">
-                        <img
-                          src="../assets/images/premios/07.png"
-                          class="mx-auto mt-1"
-                        />
+              </div>
+            </div>
+            <div class="w-1/2 mt-6">
+              <div class="flex flex-wrap justify-center px-4">
+                <div
+                  class="card w-auto bg-base-100 shadow-xl px-auto mt-1 py-0"
+                >
+                  <div class="card-body py-0 px-4">
+                    <div class="flex flex-wrap">
+                      <div class="w-full mx-auto text-center">
+                        <h2 class="text-xl font-bold text-center">
+                          Qualitas Fiat Chrysle
+                        </h2>
+                      </div>
+                      <div class="w-1/3">
+                        <div class="flex justify-center px-1 mt-6 mx-auto mb-6">
+                          <div class="w-10/12 px-1 mb-6">
+                            <img
+                              src="../assets/images/premios/07.png"
+                              class="mt-1"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-2/3 my-auto">
+                        <br />
+                        <div
+                          class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400"
+                        >
+                          <div class="card-body text-white text-lg">
+                            <p>
+                              O prêmio destaca os fornecedores que obtiveram o
+                              melhor desempenho em qualidade, inovação,
+                              competitividade e nível de serviço.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
