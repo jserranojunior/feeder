@@ -36,7 +36,7 @@
               <li><a href="#certificados">Certificados</a></li>
               <li><a href="#premios">Prêmios</a></li>
 
-              <li><a>Contato</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </div>
         </div>
@@ -347,6 +347,41 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contato">
+          <div class="py-4 px-8 mt-4 text-center">
+            <span
+              class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
+              >Contato</span
+            >
+          </div>
+
+          <div class="flex justify-between px-12 mt-6 py-6 bg-gray-500">
+            <div class="w-1/2 px-6 py-4">
+              <div class="card bg-white shadow-xl mx-auto">
+                <div class="card-body p-4">
+                  <span class="font-bold">Endereço:</span>R. Prof. João
+                  Cavaleiro Salém, 310, Parque das Nacoes, Guarulhos, SP
+                  <br /><span class="font-bold">Telefone:</span> (11) 2413-0070
+                  <br /><span class="font-bold">Email:</span>
+                  feeder@feeder.com.br
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2 px-6 py-6">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5144.524769267864!2d-46.413535747911055!3d-23.43142374324372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce89d86d79a521%3A0x187bf9bed7a1cc3!2sR.%20Prof.%20Jo%C3%A3o%20Cavaleiro%20Sal%C3%A9m%2C%20310%20-%20Parque%20das%20Nacoes%2C%20Guarulhos%20-%20SP%2C%2007243-580!5e0!3m2!1spt-BR!2sbr!4v1670944596928!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="200"
+                  style="border: 0"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
