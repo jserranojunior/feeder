@@ -44,24 +44,24 @@
 
         <section id="sobre">
           <div
-            class="bg-gradient-to-r from-primary via-green-500 to-blue-400 flex mt-1"
+            class="bg-gradient-to-r from-primary via-green-500 to-blue-400 flex flex-wrap mt-1"
           >
-            <div class="w-1/2 text-white px-12 py-6 mx-auto px-auto">
+            <div class="w-full md:w-1/2">
+              <img
+                ref="logo"
+                src="../assets/images/home/1.png"
+                class="w-full md:w-1/2 mx-auto"
+              />
+            </div>
+            <div class="w-full md:w-1/2 text-white px-12 py-6 mx-auto px-auto">
               Mais de 200 máquinas de última geração, distribuidas em 15.000m²
               de área construída, em um terreno de 30.000m². <br /><br />Dentre
               o maquinário, injetoras, CNCs, prensas, máquinas e robôs de solda,
               dobrada de molas. Todas as máquinas possuem qualidade e eficácia
             </div>
-            <div class="w-1/2">
-              <img
-                ref="logo"
-                src="../assets/images/home/1.png"
-                class="w-1/2 mx-auto"
-              />
-            </div>
           </div>
 
-          <div class="flex justify-center mt-4 gap-2 px-12">
+          <div class="flex flex-wrap justify-center mt-4 gap-2 px-12">
             <div class="card w-96 bg-base-100 shadow-xl px-auto" ref="card">
               <div class="card-body">
                 <h2 class="card-title">Seja Bem-vindo à Feeder</h2>
@@ -76,7 +76,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2">
               <div
                 class="card w-auto bg-base-100 shadow-xl px-auto"
                 ref="afeeder"
@@ -105,23 +105,23 @@
             >
           </div>
 
-          <div class="flex mt-3 px-12 gap-1 justify-between">
-            <div class="w-1/3 mx-auto">
+          <div class="flex flex-wrap mt-3 px-12 gap-1 justify-between">
+            <div class="w-full md:w-1/3 mx-auto">
               <img src="../assets/images/home/7.png" class="mx-auto" />
             </div>
-            <div class="w-1/3 mx-auto">
+            <div class="w-full md:w-1/3 mx-auto">
               <img src="../assets/images/home/8.png" class="mx-auto" />
             </div>
-            <div class="w-1/3 mx-auto">
+            <div class="w-full md:w-1/3 mx-auto">
               <img src="../assets/images/home/9.png" class="mx-auto" />
             </div>
           </div>
 
-          <div class="flex mt-3 px-12 gap-1">
-            <div class="w-2/3 mx-auto">
+          <div class="flex flex-wrap mt-3 px-12 gap-1">
+            <div class="w-full md:w-2/3 mx-auto">
               <img src="../assets/images/home/3.png" class="mx-auto" />
             </div>
-            <div class="w-2/3 mx-auto">
+            <div class="w-full md:w-2/3 mx-auto">
               <img src="../assets/images/home/10.png" class="mx-auto" />
             </div>
           </div>
@@ -135,22 +135,22 @@
             >
           </div>
           <div class="flex flex-wrap px-12 mt-6">
-            <div class="w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/1.png" class="mx-auto mt-1" />
             </div>
-            <div class="w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/2.png" class="mx-auto mt-1" />
             </div>
-            <div class="w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/3.png" class="mx-auto mt-1" />
             </div>
-            <div class="w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/4.png" class="mx-auto mt-1" />
             </div>
-            <div class="w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/5.png" class="mx-auto mt-1" />
             </div>
-            <div class="w-1/3 px-1">
+            <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/6.png" class="mx-auto mt-1" />
             </div>
           </div>
@@ -182,7 +182,7 @@
             class="flex flex-wrap px-12 justify-center bg-gradient-to-r from-primary via-green-500 to-blue-400 mt-6 mb-6 pb-6"
           >
             <div class="w-full px-2">
-              <div class="card w-80 bg-base-100 shadow-xl mt-6 mx-auto">
+              <div class="card md:w-1/3 bg-base-100 shadow-xl mt-6 mx-auto">
                 <figure class="p-1">
                   <img
                     src="../assets/images/home/4.png"
@@ -192,8 +192,8 @@
                 </figure>
               </div>
             </div>
-            <div class="w-1/3">
-              <div class="card w-96 bg-base-100 shadow-xl mt-6 mx-auto">
+            <div class="w-full md:w-1/3 px-4">
+              <div class="card bg-base-100 shadow-xl mt-6 mx-auto">
                 <figure class="p-1">
                   <img
                     src="../assets/images/certificados/7863ts.jpg"
@@ -213,8 +213,8 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/3">
-              <div class="card w-96 bg-base-100 shadow-xl mt-6 mx-auto">
+            <div class="w-full md:w-1/3 px-4">
+              <div class="card bg-base-100 shadow-xl mt-6 mx-auto">
                 <figure class="p-1">
                   <img
                     src="../assets/images/certificados/160qsb.jpg"
@@ -234,8 +234,8 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/3">
-              <div class="card w-96 bg-base-100 shadow-xl mt-6 mx-auto">
+            <div class="w-full md:w-1/3 px-4">
+              <div class="card bg-base-100 shadow-xl mt-6 mx-auto">
                 <figure class="p-1">
                   <img
                     src="../assets/images/certificados/1789iso.jpg"
@@ -266,8 +266,8 @@
               >Prêmios</span
             >
           </div>
-          <div class="flex px-12 mb-6">
-            <div class="w-1/2 mt-6">
+          <div class="flex flex-wrap px-12 mb-6">
+            <div class="w-full md:w-1/2 mt-6">
               <div class="flex flex-wrap justify-center px-4">
                 <div class="card w-auto bg-base-100 shadow-xl px-auto mt-1">
                   <div class="card-body p-0 py-4">
@@ -308,7 +308,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2 mt-6">
+            <div class="w-full md:w-1/2 mt-6">
               <div class="flex flex-wrap justify-center px-4">
                 <div
                   class="card w-auto bg-base-100 shadow-xl px-auto mt-1 py-0"
@@ -320,7 +320,7 @@
                           Qualitas Fiat Chrysle
                         </h2>
                       </div>
-                      <div class="w-1/3">
+                      <div class="w-full md:w-1/3">
                         <div class="flex justify-center px-1 mt-6 mx-auto mb-6">
                           <div class="w-10/12 px-1 mb-6">
                             <img
@@ -330,7 +330,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="w-2/3 my-auto">
+                      <div class="w-full md:w-2/3 my-auto">
                         <br />
                         <div
                           class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400"
@@ -360,8 +360,10 @@
             >
           </div>
 
-          <div class="flex justify-between px-12 mt-6 py-6 bg-gray-500">
-            <div class="w-1/2 px-6 py-4">
+          <div
+            class="flex flex-wrap justify-between px-12 mt-6 py-6 bg-gray-500"
+          >
+            <div class="w-full md:w-1/2 px:0 md:px-6 py-4">
               <div class="card bg-white shadow-xl mx-auto">
                 <div class="card-body p-4">
                   <span class="font-bold">Endereço:</span>R. Prof. João
@@ -372,9 +374,10 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2 px-6 py-6">
+            <div class="px0 md:px-6 py-6">
               <div>
                 <iframe
+                  class="w-full"
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5144.524769267864!2d-46.413535747911055!3d-23.43142374324372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce89d86d79a521%3A0x187bf9bed7a1cc3!2sR.%20Prof.%20Jo%C3%A3o%20Cavaleiro%20Sal%C3%A9m%2C%20310%20-%20Parque%20das%20Nacoes%2C%20Guarulhos%20-%20SP%2C%2007243-580!5e0!3m2!1spt-BR!2sbr!4v1670944596928!5m2!1spt-BR!2sbr"
                   width="600"
                   height="200"
@@ -388,7 +391,7 @@
         </section>
 
         <footer
-          class="footer px-40 py-6 bg-neutral text-neutral-content align-center justify-between"
+          class="footer px-12 md:px-40 py-6 bg-neutral text-neutral-content align-center justify-between"
         >
           <div class="my-auto px-">
             <img src="../assets/images/logo.png" width="60" alt="" />
