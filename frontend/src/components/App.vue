@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import HelloWorld from "./HelloWorld.vue";
+  import ProdutosVue from "./Produtos.vue";
+  import FabricaVue from "./Fabrica.vue";
   import gsap from "gsap";
   import { onMounted, ref } from "vue";
   const logo = ref(null);
@@ -20,6 +21,8 @@
 
 <template>
   <div>
+    <FabricaVue></FabricaVue>
+    <ProdutosVue></ProdutosVue>
     <div class="drawer bg-base-200">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
@@ -105,14 +108,14 @@
             >
           </div>
 
-          <div class="flex flex-wrap mt-3 px-12 gap-1 justify-between">
-            <div class="w-full md:w-1/3 mx-auto">
+          <div class="flex flex-wrap mt-3 px-12 justify-center">
+            <div class="w-full md:w-1/3 mx-auto px-6">
               <img src="../assets/images/home/7.png" class="mx-auto" />
             </div>
-            <div class="w-full md:w-1/3 mx-auto">
+            <div class="w-full md:w-1/3 mx-auto px-6">
               <img src="../assets/images/home/8.png" class="mx-auto" />
             </div>
-            <div class="w-full md:w-1/3 mx-auto">
+            <div class="w-full md:w-1/3 mx-auto px-6">
               <img src="../assets/images/home/9.png" class="mx-auto" />
             </div>
           </div>
@@ -123,6 +126,12 @@
             </div>
             <div class="w-full md:w-2/3 mx-auto">
               <img src="../assets/images/home/10.png" class="mx-auto" />
+            </div>
+          </div>
+
+          <div class="flex mt-1 justify-end">
+            <div class="mt-4 mx-auto">
+              <label for="my-modal-fabrica" class="btn">Veja Mais</label>
             </div>
           </div>
         </section>
@@ -152,6 +161,12 @@
             </div>
             <div class="w-full md:w-1/3 px-1">
               <img src="../assets/images/produtos/6.png" class="mx-auto mt-1" />
+            </div>
+          </div>
+
+          <div class="flex mt-1 justify-end">
+            <div class="mt-4 mr-12">
+              <label for="my-modal-produtos" class="btn">Mais Produtos</label>
             </div>
           </div>
         </section>
