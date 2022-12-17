@@ -3,19 +3,19 @@
     <input type="checkbox" id="my-modal-fabrica" class="modal-toggle" />
     <div class="modal p-0">
       <div class="modal-box">
-        <h3 class="font-bold text-lg px-4 text-center">Produtos</h3>
-
+        <h3 class="font-bold text-lg px-4 text-center">Fábrica</h3>
         <section class="overflow-hidden text-gray-700">
           <div class="container mx-auto p-2">
             <div class="flex flex-wrap">
-              <div class="flex flex-wrap w-1/3" v-for="image in countImages">
+              <div
+                class="flex flex-wrap w-1/3"
+                v-for="image in state.imagesLinks"
+              >
                 <div class="w-full p-1">
                   <img
                     alt="gallery"
                     class="block object-cover object-center w-full h-full rounded-lg shadow-lg"
-                    :src="
-                      'src/assets/images/fabrica_completo/' + image + '.jpg'
-                    "
+                    :src="image"
                   />
                 </div>
               </div>
@@ -31,5 +31,20 @@
 </template>
 
 <script lang="ts" setup>
+  import { reactive, onBeforeMount } from "vue";
+
   const countImages = 67;
+
+  const state = reactive({
+    imagesLinks: [] as any,
+  });
+
+  onBeforeMount(async () => {
+    let contador = 1;
+
+    while (contador < 68) {
+      state.imagesLinks.push(`/static/img/fabrica_completo/${contador}.jpg`);
+      contador += 1;
+    }
+  });
 </script>
