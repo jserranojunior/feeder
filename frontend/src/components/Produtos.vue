@@ -1,8 +1,8 @@
 <template>
   <div>
     <input type="checkbox" id="my-modal-produtos" class="modal-toggle" />
-    <div class="modal p-0">
-      <div class="modal-box">
+    <label for="my-modal-produtos" class="modal cursor-pointer p-0">
+      <div class="modal-box w-11/12 max-w-5xl">
         <h3 class="font-bold text-lg px-4 text-center">Produtos</h3>
 
         <section class="overflow-hidden text-gray-700">
@@ -29,7 +29,7 @@
           >
         </div>
       </div>
-    </div>
+    </label>
   </div>
 </template>
 
