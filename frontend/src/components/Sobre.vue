@@ -11,14 +11,12 @@
           class="w-full md:w-1/2 my-auto mx-auto"
           width="500"
           height="500"
-          style="width: 100%"
         />
         <img
           src="/static/img/home/1.png"
           class="w-full md:w-1/2 my-auto mx-auto"
           width="500"
           height="500"
-          style="width: 100%"
         />
       </div>
       <div class="w-full md:w-1/2 text-white px-12 py-6 mx-auto px-auto">
