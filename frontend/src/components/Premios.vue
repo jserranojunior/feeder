@@ -19,18 +19,12 @@
                   <img
                     src="../assets/images/premios/p01.png"
                     class="mx-auto mt-1"
-                    width="500"
-                    height="500"
-                    style="width: 100%"
                   />
                 </div>
                 <div class="w-1/2">
                   <img
                     src="../assets/images/premios/p02.png"
                     class="mx-auto mt-1"
-                    width="500"
-                    height="500"
-                    style="width: 100%"
                   />
                 </div>
                 <div class="w-full px-4 pt-1">
@@ -67,13 +61,7 @@
                 <div class="w-full md:w-1/3">
                   <div class="flex justify-center px-1 mt-6 mx-auto mb-6">
                     <div class="w-10/12 px-1 mb-6">
-                      <img
-                        src="../assets/images/premios/07.png"
-                        class="mt-1"
-                        width="500"
-                        height="500"
-                        style="width: 100%"
-                      />
+                      <img src="../assets/images/premios/07.png" class="mt-1" />
                     </div>
                   </div>
                 </div>
