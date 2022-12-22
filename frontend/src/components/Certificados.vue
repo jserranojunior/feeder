@@ -17,6 +17,9 @@
               src="../assets/images/home/4.png"
               alt="Shoes"
               class="rounded-xl"
+              width="500"
+              height="500"
+              style="width: 100%"
             />
           </figure>
         </div>
@@ -31,6 +34,9 @@
                 src="/static/img/certificados/7863ts.jpg"
                 alt="Shoes"
                 class="rounded-xl w-1/3"
+                width="500"
+                height="500"
+                style="width: 100%"
               />
             </figure>
             <div class="card-body items-center text-center p-4">
@@ -62,6 +68,9 @@
                 src="/static/img/certificados/160qsb.jpg"
                 alt="Shoes"
                 class="rounded-xl w-1/2"
+                width="500"
+                height="500"
+                style="width: 100%"
               />
             </figure>
             <div class="card-body items-center text-center p-4">
@@ -93,6 +102,9 @@
                 src="/static/img/certificados/1789iso.jpg"
                 alt="Shoes"
                 class="rounded-xl w-1/3"
+                width="500"
+                height="500"
+                style="width: 100%"
               />
             </figure>
             <div class="card-body items-center text-center p-4">

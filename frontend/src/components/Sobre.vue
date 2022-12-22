@@ -4,9 +4,21 @@
       class="bg-gradient-to-r from-primary via-green-500 to-blue-400 flex flex-wrap mt-1"
     >
       <div class="w-full md:w-1/2">
+        <link
+          rel="preload"
+          as="image"
+          href="/static/img/home/1.png"
+          class="w-full md:w-1/2 my-auto mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
+        />
         <img
-          src="../assets/images/home/1.png"
-          class="w-full md:w-1/2 mx-auto"
+          src="/static/img/home/1.png"
+          class="w-full md:w-1/2 my-auto mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
         />
       </div>
       <div class="w-full md:w-1/2 text-white px-12 py-6 mx-auto px-auto">
@@ -34,8 +46,14 @@
       </div>
       <div class="w-full md:w-1/2">
         <div class="card w-auto bg-base-100 shadow-xl px-auto" ref="afeeder">
-          <div class="card-body">
-            <img src="../assets/images/home/2.png" class="mx-auto mt-1" />
+          <div class="card-body p-0 md:p-4">
+            <img
+              src="../assets/images/home/2.png"
+              class="mx-auto mt-1"
+              width="500"
+              height="500"
+              style="width: 100%"
+            />
           </div>
         </div>
       </div>

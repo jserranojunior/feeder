@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "daisyui": "^2.43.0",
-    "gsap": "^3.11.3",
     "vue": "^3.2.45"
   },
   "devDependencies": {
