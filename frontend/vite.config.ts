@@ -26,7 +26,7 @@ export default ({ command }) => {
         host: "0.0.0.0",
         port: 5000,
         https: true,
-        hmr: { host: "https://feeder.alvitre.com.br", port: 443 },
+        hmr: { host: "http://feeder.com.br", port: 443 },
       },
       build: {
         target: "esnext",

@@ -6,7 +6,6 @@
         >Certificados</span
       >
     </div>
-
     <div
       class="flex flex-wrap px-12 justify-center bg-gradient-to-r from-primary via-green-500 to-blue-400 mt-6 mb-6 pb-6"
     >
@@ -24,7 +23,7 @@
           </figure>
         </div>
       </div>
-      <div class="w-full md:w-1/3 px-4">
+      <div class="w-full md:w-1/2 px-4">
         <a href="/static/img/certificados/7863ts.jpg" target="_blank">
           <div
             class="card bg-base-100 shadow-xl mt-6 mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
@@ -58,7 +57,7 @@
           </div>
         </a>
       </div>
-      <div class="w-full md:w-1/3 px-4">
+<!--       <div class="w-full md:w-1/3 px-4">
         <a href="/static/img/certificados/160qsb.jpg" target="_blank">
           <div
             class="card bg-base-100 shadow-xl mt-6 mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
@@ -91,8 +90,8 @@
             </div>
           </div>
         </a>
-      </div>
-      <div class="w-full md:w-1/3 px-4">
+      </div> -->
+<!--       <div class="w-full md:w-1/3 px-4">
         <a href="/static/img/certificados/1789iso.jpg" target="_blank">
           <div
             class="card bg-base-100 shadow-xl mt-6 mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
@@ -125,7 +124,7 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

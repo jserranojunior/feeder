@@ -1,10 +1,7 @@
 <template>
   <section id="premios">
     <div class="py-4 mt-4 text-center">
-      <span
-        class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
-        >Prêmios</span
-      >
+      <span class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800">Prêmios</span>
     </div>
     <div class="flex flex-wrap px-12 mb-6">
       <div class="w-full md:w-1/2 mt-6">
@@ -16,21 +13,13 @@
               </h2>
               <div class="flex flex-wrap justify-between">
                 <div class="w-1/2">
-                  <img
-                    src="../assets/images/premios/p01.png"
-                    class="mx-auto mt-1"
-                  />
+                  <img src="../assets/images/premios/p01.png" class="mx-auto mt-1" />
                 </div>
                 <div class="w-1/2">
-                  <img
-                    src="../assets/images/premios/p02.png"
-                    class="mx-auto mt-1"
-                  />
+                  <img src="../assets/images/premios/p02.png" class="mx-auto mt-1" />
                 </div>
                 <div class="w-full px-4 pt-1">
-                  <div
-                    class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400"
-                  >
+                  <div class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400">
                     <div class="card-body text-white py-2">
                       <p>
                         O prêmio Top of Quality Brazil, segundo a Cia. Eventos &
@@ -55,7 +44,7 @@
               <div class="flex flex-wrap">
                 <div class="w-full mx-auto text-center">
                   <h2 class="text-xl font-bold text-center">
-                    Qualitas Fiat Chrysle
+                    Qualitas Fiat Chrysler
                   </h2>
                 </div>
                 <div class="w-full md:w-1/3">
@@ -67,9 +56,7 @@
                 </div>
                 <div class="w-full md:w-2/3 my-auto">
                   <br />
-                  <div
-                    class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400"
-                  >
+                  <div class="card w-auto shadow-xl px-auto mt-1 bg-gradient-to-r from-primary via-green-500 to-blue-400">
                     <div class="card-body text-white text-lg">
                       <p>
                         O prêmio destaca os fornecedores que obtiveram o melhor
