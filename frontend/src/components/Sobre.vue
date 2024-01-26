@@ -57,8 +57,15 @@ Among the machinery are injection molding machines, CNCs, presses, machines, and
       <div class="w-full md:w-1/2">
         <div class="card w-auto bg-base-100 shadow-xl px-auto" ref="afeeder">
           <div class="card-body p-0 md:p-4">
-            <img
+            <img v-if="UseLang.store.lang == 'pt'"
               src="../assets/images/home/2.png"
+              class="mx-auto mt-1"
+              width="500"
+              height="500"
+              style="width: 100%"
+            />
+            <img v-else
+              src="../assets/images/home/en/2.png"
               class="mx-auto mt-1"
               width="500"
               height="500"

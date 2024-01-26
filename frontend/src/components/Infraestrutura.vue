@@ -13,17 +13,15 @@
 
     <div class="flex flex-wrap mt-3 px-12 justify-center">
       <div class="w-full md:w-1/3 mx-auto px-6">
-        <img
+        <img v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/7.png"
           class="mx-auto"
           width="500"
           height="500"
           style="width: 100%"
         />
-      </div>
-      <div class="w-full md:w-1/3 mx-auto px-6">
-        <img
-          src="../assets/images/home/8.png"
+        <img v-else
+          src="../assets/images/home/en/7.png"
           class="mx-auto"
           width="500"
           height="500"
@@ -31,8 +29,31 @@
         />
       </div>
       <div class="w-full md:w-1/3 mx-auto px-6">
-        <img
+        <img v-if="UseLang.store.lang == 'pt'"
+          src="../assets/images/home/8.png"
+          class="mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
+        />
+        <img v-else
+          src="../assets/images/home/en/8.png"
+          class="mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
+        />
+      </div>
+      <div class="w-full md:w-1/3 mx-auto px-6">
+        <img  v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/9.png"
+          class="mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
+        />
+        <img  v-else
+          src="../assets/images/home/en/9.png"
           class="mx-auto"
           width="500"
           height="500"

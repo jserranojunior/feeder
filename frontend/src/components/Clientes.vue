@@ -10,8 +10,15 @@
     </div>
     <div class="flex gap-1 px-12 mt-6 bg-gray-100 py-4">
       <div class="w-full md:w-2/3 mx-auto px-1">
-        <img
+        <img v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/5.png"
+          class="mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
+        />
+        <img v-else
+          src="../assets/images/home/en/5.png"
           class="mx-auto"
           width="500"
           height="500"
