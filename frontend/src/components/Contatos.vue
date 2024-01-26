@@ -3,7 +3,8 @@
     <div class="py-4 px-8 mt-4 text-center">
       <span
         class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
-        >Contato</span
+        ><span v-if="UseLang.store.lang == 'pt'">Contato</span>
+        <span v-else>Contact</span></span
       >
     </div>
 
@@ -18,7 +19,8 @@
                   width="20"
                   class="inline-block mx-1 my-auto mb-1"
                 />
-                Endereço:
+                <span v-if="UseLang.store.lang == 'pt'">Endereço:</span>
+                <span>Address:</span>
               </span>
               <br />
               <a
@@ -42,7 +44,9 @@
                   icon="bytesize:telephone"
                   width="20"
                   class="inline-block mx-1 my-auto mb-1"
-                />Telefones:
+                />
+                <span v-if="UseLang.store.lang == 'pt'">Telefones:</span>
+                <span v-else>Phones:</span>
               </span>
               <br />
 
@@ -54,7 +58,8 @@
                   icon="material-symbols:mail-outline-rounded"
                   width="20"
                   class="inline-block mx-1 my-auto mb-1"
-                />Email:
+                />
+                Email:
               </span>
 
               <a href="mailto:feeder@feeder.com.br"
@@ -62,7 +67,9 @@
 
                 <div class="mx-auto justify-center text-center">
                   <button class="btn btn-sm btn-secondary mt-2">
-                    Entre em contato
+                    <span v-if="UseLang.store.lang == 'pt'">Entre em contato</span>
+                    <span v-else>
+Get in touch</span>
                   </button>
                 </div>
               </a>
@@ -88,6 +95,9 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import UseLang from "../composables/lang"
+
+</script>
 
 <style scoped></style>

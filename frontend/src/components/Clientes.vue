@@ -3,7 +3,9 @@
     <div class="py-4 px-2 md:px-8 mt-4 text-center">
       <span
         class="text-base md:text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
-        >Alguns de nossos clientes</span
+        ><span v-if="UseLang.store.lang == 'pt'">Alguns de nossos clientes</span>
+        <span v-else>Some of our clients
+</span></span
       >
     </div>
     <div class="flex gap-1 px-12 mt-6 bg-gray-100 py-4">
@@ -20,6 +22,9 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import UseLang from "../composables/lang"
+
+</script>
 
 <style scoped></style>

@@ -6,7 +6,8 @@
     <div class="py-4 px-2 md:px-8 mt-4 text-center">
       <span
         class="text-base md:text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
-        >Tecnologia, qualidade e comprometimento</span
+        ><span v-if="UseLang.store.lang == 'pt'">Tecnologia, qualidade e comprometimento</span>
+        <span v-else>Technology, quality, and commitment</span></span
       >
     </div>
     <div class="flex flex-wrap px-12 mt-6">
@@ -69,10 +70,11 @@
     <div class="flex mt-1 justify-end">
       <div class="mt-4 mr-12">
         <label
-          for="my-modal-produtos"
+          
           class="btn animate-bounce"
           @click="changeProdutos()"
-          >Mais Produtos</label
+          ><span v-if="UseLang.store.lang == 'pt'">Mais Produtos</span>
+          <span v-else>More products</span></label
         >
       </div>
     </div>
@@ -82,6 +84,7 @@
 <script setup lang="ts">
   import ProdutosModalVue from "./ProdutosModal.vue";
   import { reactive } from "vue";
+  import UseLang from "../composables/lang"
 
   const state = reactive({
     showProdutos: false,

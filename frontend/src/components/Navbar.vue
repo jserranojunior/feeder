@@ -2,7 +2,7 @@
 
   <div class="navbar bg-base-100 flex mx-0 px-0">
     <div class="navbar-start ">
-      <div class="hidden lg:flex w-full px-6">
+      <div class="xs:hidden lg:flex w-full px-6">
         <img src="../assets/images/logo.png" width="80" alt="" />
       </div>
       <div class="dropdown text-center mx-auto">
@@ -61,7 +61,7 @@
         </ul>
       </div>
     </div>
-    <div class="navbar-end hidden lg:flex w-full ">
+    <div class="navbar-end xs:hidden lg:flex w-full ">
       <ul class="menu menu-horizontal px-0 ">
         <li>
       <span v-if="UseLang.store.lang == 'pt'">Sobre</span>

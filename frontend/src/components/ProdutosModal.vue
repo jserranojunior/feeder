@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="checkbox" id="my-modal-produtos" class="modal-toggle" />
-    <label for="my-modal-produtos" class="modal cursor-pointer p-0">
+    <label class="modal cursor-pointer p-0">
       <div class="modal-box w-11/12 max-w-5xl">
         <h3 class="font-bold text-lg px-4 text-center">Produtos</h3>
 
@@ -24,7 +24,7 @@
           </div>
         </section>
         <div class="modal-action py-0 pr-3">
-          <label for="my-modal-produtos" class="btn btn-secondary"
+          <label class="btn btn-secondary"
             >Fechar</label
           >
         </div>

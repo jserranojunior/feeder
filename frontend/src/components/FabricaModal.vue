@@ -2,7 +2,7 @@
   <div>
     <input type="checkbox" id="my-modal-fabrica" class="modal-toggle" />
 
-    <label for="my-modal-fabrica" class="modal cursor-pointer p-0">
+    <label  class="modal cursor-pointer p-0">
       <div class="modal-box w-11/12 max-w-5xl" for="">
         <h3 class="font-bold text-lg px-4 text-center">Fábrica</h3>
 
@@ -25,7 +25,7 @@
           </div>
         </section>
         <div class="modal-action py-0 pr-3">
-          <label for="my-modal-fabrica" class="btn btn-secondary">Fechar</label>
+          <label  class="btn btn-secondary">Fechar</label>
         </div>
       </div>
     </label>

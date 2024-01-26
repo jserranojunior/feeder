@@ -1,6 +1,6 @@
 <template>
-      <div>
-    <div class="bg-base-200">
+    
+   
       <div class="content px-0 md:px-0 lg:px-0 2xl:px-24 bg-white">
         <Navbar></Navbar>
         <Sobre></Sobre>
@@ -13,8 +13,8 @@
         <Footer></Footer>
         <BtnToTop></BtnToTop>
       </div>
-    </div>
-  </div>
+    
+
 </template>
 <script setup lang="ts">
   import ProdutosVue from "./ProdutosModal.vue";

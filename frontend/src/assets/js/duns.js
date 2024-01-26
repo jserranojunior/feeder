@@ -1,4 +1,4 @@
-console.log("rest");
+
 var message = "";
 function clickIE() {
   if (document.all) {

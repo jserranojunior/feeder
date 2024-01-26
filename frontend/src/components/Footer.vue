@@ -8,8 +8,8 @@
       <img src="../assets/images/logo.png" width="60" alt="" />
 
       <p>
-        Feeder Industria LTDA<br />Copyright © 2022 - Todos os direitos
-        reservados
+        Feeder Industria LTDA<br />Copyright © 2024 - <span v-if="UseLang.store.lang == 'pt'">Todos os direitos
+        reservados</span><span v-else>All rights reserved.</span>
       </p>
     </div>
 
@@ -39,44 +39,20 @@
 
       <div class="card w-32  shadow-xl p-1 mx-auto">
       
-          <div class="card-body p-0 bg-white rounded-lg mx-auto">
+          <div class="card-body p-0 bg-white rounded-lg mx-auto" v-if="state.domain != 'localhost'">
             <iframe id='Iframe1' src='https://dunsregistered.dnb.com/SealAuthentication.aspx?Cid=1' width='114px' height='97px' frameborder='0' scrolling='no' allowtransparency='true' ></iframe>
 
-             <!--  <img
-                src="/static/img/certificados/duns.png"
-                class="mt-1"
-                style="width: 100%"
-            width="100"
-            height="100"
-              />
-             -->
+       
           </div>
         
       </div>
-<!--       <div class="card w-24 bg-base-100 shadow-xl p-1">
-        <a
-          href="https://profiles.dunsregistered.com/TPBRBasicProfilePOR.aspx?ListArea=10&SealkeyQ=B54323085517"
-          target="_blank"
-        >
-          <div class="card-body p-1 flex">
-            <div class="w-full">
-              <img
-                id="Image1"
-                src="/static/img/qrcode.png"
-                style="width: 100%"
-            width="100"
-            height="100"
-              />
-            </div>
-          </div>
-        </a>
-      </div> -->
+
     </div>
     </div>
 
     <div class="w-full sm:w-1/4">
       <span class="footer-title">Social</span>
-      <div class="grid grid-flow-col gap-4">
+      <div class="grid grid-flow-col gap-4" v-if="state.domain != 'localhost'">
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFeederIndustrial&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           width="340"
@@ -97,6 +73,16 @@
   </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import UseLang from "../composables/lang"
+
+import { reactive } from "vue";
+import router from "../routes/router"
+const state = reactive({
+  domain: window.location.hostname
+})
+
+
+</script>
 
 <style scoped></style>
