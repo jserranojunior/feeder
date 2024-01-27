@@ -13,8 +13,16 @@
       <div class="w-full px-2">
         <div class="card md:w-1/3 bg-base-100 shadow-xl mt-6 mx-auto">
           <figure class="p-1">
-            <img
+            <img v-if="UseLang.store.lang == 'pt'"
               src="../assets/images/home/4.png"
+              alt="Shoes"
+              class="rounded-xl"
+              width="500"
+              height="500"
+              style="width: 100%"
+            />
+            <img v-else
+              src="../assets/images/home/en/4.png"
               alt="Shoes"
               class="rounded-xl"
               width="500"
