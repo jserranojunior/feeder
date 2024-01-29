@@ -1,11 +1,62 @@
 <template>
-
-  <div class="navbar bg-base-100 flex mx-0 px-0">
-    <div class="navbar-start ">
+ 
+  <div class="mt-2 bg-base-100 flex mx-0 px-0">
+    <div class="w-full">
       <div class="flex w-full px-6">
         <img src="../assets/images/logo.png" width="80" alt="" />
       </div>
-      <div class="dropdown text-center mx-auto xs:block md:hidden">
+    </div>
+    <div class="w-full ">
+      <div class="xs:hidden tab:hidden lap:block ">
+        <div class="w-1/2 ml-auto">
+          <ul class="menu right-full float-right left-0 menu-horizontal ">
+          <li class="">
+            <a href="#sobre">
+              <span v-if="UseLang.store.lang == 'pt'">Sobre</span>
+              <span v-else>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#infraestrutura">
+              <span v-if="UseLang.store.lang == 'pt'">Infraestrutura</span>
+              <span v-else>Infrastructure</span>
+            </a>
+          </li>
+          <li>
+            <a href="#clientes">
+              <span v-if="UseLang.store.lang == 'pt'">Clientes</span>
+              <span v-else>Clients</span>
+            </a>
+          </li>
+          <li>
+            <a href="#certificados">
+              <span v-if="UseLang.store.lang == 'pt'">Certificados</span>
+              <span v-else>Certificates</span>
+            </a>
+          </li>
+          <li>
+            <a href="#premios">
+              <span v-if="UseLang.store.lang == 'pt'">Prêmios</span>
+              <span v-else>Awards</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contato">
+              <span v-if="UseLang.store.lang == 'pt'">Contato</span>
+              <span v-else>Contact</span>
+            </a>
+          </li>
+          <li >
+            <div class="bg-white hover:bg-white pr-0">
+              <div class="dropdown w-auto max-w-xs dropdown-end">
+                <ButtonChangeLang></ButtonChangeLang>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="dropdown text-center mx-auto xs:flex tab:flex lap:hidden">
         <label
           tabindex="0"
           class="btn btn-primary text-gray-100 lg:hidden ml-auto"
@@ -29,110 +80,57 @@
           tabindex="0"
           class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><a><span>Home</span></a></li>
+          <li>
+            <a><span>Home</span></a>
+          </li>
           <li>
             <a href="#sobre">
-      <span v-if="UseLang.store.lang == 'pt'">Sobre</span>
-      <span v-else>About</span>
-      </a>
-    </li>
-    <li>
-      <a href="#infraestrutura">
-      <span v-if="UseLang.store.lang == 'pt'">Infraestrutura</span>
-      <span v-else>Infrastructure</span>
-      </a>
-    </li>
-    <li>
-      <a href="#clientes">
-      <span v-if="UseLang.store.lang == 'pt'">Clientes</span>
-      <span v-else>Clients</span>
-      </a>
-    </li>
-    <li>
-      <a href="#certificados">
-      <span v-if="UseLang.store.lang == 'pt'">Certificados</span>
-      <span v-else>Certificates</span>
-      </a>
-    </li>
-    <li>
-      <a href="#premios">
-      <span v-if="UseLang.store.lang == 'pt'">Prêmios</span>
-      <span v-else>Awards</span>
-      </a>
-    </li>
-    <li>
-      <a href="#contato">
-      <span v-if="UseLang.store.lang == 'pt'">Contato</span>
-      <span v-else>Contact</span>
-      </a>
-    </li>
-          <li>   
+              <span v-if="UseLang.store.lang == 'pt'">Sobre</span>
+              <span v-else>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#infraestrutura">
+              <span v-if="UseLang.store.lang == 'pt'">Infraestrutura</span>
+              <span v-else>Infrastructure</span>
+            </a>
+          </li>
+          <li>
+            <a href="#clientes">
+              <span v-if="UseLang.store.lang == 'pt'">Clientes</span>
+              <span v-else>Clients</span>
+            </a>
+          </li>
+          <li>
+            <a href="#certificados">
+              <span v-if="UseLang.store.lang == 'pt'">Certificados</span>
+              <span v-else>Certificates</span>
+            </a>
+          </li>
+          <li>
+            <a href="#premios">
+              <span v-if="UseLang.store.lang == 'pt'">Prêmios</span>
+              <span v-else>Awards</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contato">
+              <span v-if="UseLang.store.lang == 'pt'">Contato</span>
+              <span v-else>Contact</span>
+            </a>
+          </li>
+          <li>
             <ButtonChangeLang></ButtonChangeLang>
-       
-</li> 
+          </li>
         </ul>
       </div>
     </div>
-    <div class="navbar-end xs:hidden md:block w-full ">
-      <ul class="menu menu-horizontal px-0 ">
-        <li>
-          <a href="#sobre">
-      <span v-if="UseLang.store.lang == 'pt'">Sobre</span>
-      <span v-else>About</span>
-      </a>
-    </li>
-    <li>
-      <a href="#infraestrutura">
-      <span v-if="UseLang.store.lang == 'pt'">Infraestrutura</span>
-      <span v-else>Infrastructure</span>
-      </a>
-    </li>
-    <li>
-      <a href="#clientes">
-      <span v-if="UseLang.store.lang == 'pt'">Clientes</span>
-      <span v-else>Clients</span>
-      </a>
-    </li>
-    <li>
-      <a href="#certificados">
-      <span v-if="UseLang.store.lang == 'pt'">Certificados</span>
-      <span v-else>Certificates</span>
-      </a>
-    </li>
-    <li>
-      <a href="#premios">
-      <span v-if="UseLang.store.lang == 'pt'">Prêmios</span>
-      <span v-else>Awards</span>
-      </a>
-    </li>
-    <li>
-      <a href="#contato">
-      <span v-if="UseLang.store.lang == 'pt'">Contato</span>
-      <span v-else>Contact</span>
-      </a>
-    </li>
-       <li class="px-o">
-        <div class="bg-white hover:bg-white pr-0">
-          <div class="dropdown w-auto max-w-xs dropdown-end">
-          <ButtonChangeLang></ButtonChangeLang>
-      
-    </div>
-  </div>
-       </li>
-      </ul>
-    </div>
-
-  </div>
-  
-  <div>
-  
   </div>
 </template>
 
 <script setup lang="ts">
-import ButtonChangeLang from './ButtonChangeLang.vue';
-import UseLang from "../composables/lang"
-
+import ButtonChangeLang from "./ButtonChangeLang.vue";
+import UseLang from "../composables/lang";
 </script>
 
 <style scoped></style>

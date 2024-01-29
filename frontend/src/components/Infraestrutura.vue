@@ -11,8 +11,8 @@
       >
     </div>
 
-    <div class="flex flex-wrap mt-3 px-12 justify-center">
-      <div class="w-full md:w-1/3 mx-auto px-6">
+    <div class="flex flex-wrap mt-3  justify-center">
+      <div class="w-full md:w-1/3 mx-auto px-2">
         <img v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/7.png"
           class="mx-auto"
@@ -28,7 +28,7 @@
           style="width: 100%"
         />
       </div>
-      <div class="w-full md:w-1/3 mx-auto px-6">
+      <div class="w-full md:w-1/3 mx-auto px-2">
         <img v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/8.png"
           class="mx-auto"
@@ -44,7 +44,7 @@
           style="width: 100%"
         />
       </div>
-      <div class="w-full md:w-1/3 mx-auto px-6">
+      <div class="w-full md:w-1/3 mx-auto px-2">
         <img  v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/9.png"
           class="mx-auto"
@@ -62,8 +62,8 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap mt-3 px-12 gap-1">
-      <div class="w-full md:w-2/3 mx-auto">
+    <div class="flex flex-wrap mt-3 justify-center">
+      <div class="xs:w-full  tab:w-full lap:w-1/2 p-1">
         <img v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/3.png"
           class="mx-auto"
@@ -79,7 +79,7 @@
           style="width: 100%"
         />
       </div>
-      <div class="w-full md:w-2/3 mx-auto">
+      <div class="xs:w-full  tab:w-full lap:w-1/2 p-1">
         <img
           src="../assets/images/home/10.png"
           class="mx-auto"

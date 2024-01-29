@@ -1,26 +1,20 @@
 <template>
   <section id="sobre">
     <div
-      class="bg-gradient-to-r from-primary via-green-500 to-blue-400 flex flex-wrap mt-1"
+      class=" flex flex-wrap  mt-1 pb-4 shadow-md"
     >
-      <div class="w-full md:w-1/2">
-        <link
-          rel="preload"
-          as="image"
-          href="/static/img/home/1.png"
-          class="w-full md:w-1/2 my-auto mx-auto"
-          width="500"
-          height="500"
-        />
+      <div class="xs:w-full mx-auto tab:w-1/2 lap:w-3/12 des:w-3/12 my-auto ">
+       
         <img
           src="/static/img/home/1.png"
-          class="w-full md:w-1/2 my-auto mx-auto"
-          width="500"
-          height="500"
+          class="w-full "
+         
+         style="width: 100%;"
         />
       </div>
-      <div class="w-full md:w-1/2 text-white px-12 py-6 mx-auto px-auto">
-        <span v-if="UseLang.store.lang == 'pt'">
+      <div class="w-full md:w-1/2 text-white my-auto px-auto xs:text-lg lap:text-xl desk:text-3xl p-2">
+        <div class="bg-gradient-to-r from-primary  rounded-xl via-green-700 to-green-700 p-4">
+          <span v-if="UseLang.store.lang == 'pt'">
           Mais de 200 máquinas de última geração, distribuidas em 15.000m² de área
         construída, em um terreno de 30.000m².
         <br /><br />Dentre o maquinário, injetoras, CNCs, prensas, máquinas e
@@ -33,13 +27,17 @@ More than 200 state-of-the-art machines spread across 15,000m² of built-up area
 <br /><br />
 Among the machinery are injection molding machines, CNCs, presses, machines, and welding and spring bending robots. All machines are of high quality and efficiency.
         </span>
+
+        </div>
+       
       </div>
     </div>
 
-    <div class="flex flex-wrap justify-center mt-4 gap-2 px-12">
-      <div class="card w-96 bg-base-100 shadow-xl px-auto" ref="card">
+    <div class="flex flex-wrap justify-center mt-4  px-12 shadow-md">
+   <div class="xs:w-full  tab:w-full lap:w-1/2  my-auto p-1 ">
+    <div class="card bg-base-100  px-auto" ref="card">
         <div class="card-body">
-          <h2 class="card-title"><span v-if="UseLang.store.lang == 'pt'">Seja Bem-vindo à Feeder</span>
+          <h2 class="card-title text-3xl font-sans font-normal mb-4 text-green-700"><span v-if="UseLang.store.lang == 'pt'">Seja Bem-vindo à Feeder</span>
             <span v-else>Welcome to Feeder</span></h2>
           <p v-if="UseLang.store.lang == 'pt'">
             A Feeder Industrial Ltda. foi fundada em 1990, com sua primeira sede
@@ -54,8 +52,9 @@ Among the machinery are injection molding machines, CNCs, presses, machines, and
           </p>
         </div>
       </div>
-      <div class="w-full md:w-1/2">
-        <div class="card w-auto bg-base-100 shadow-xl px-auto" ref="afeeder">
+   </div>
+      <div class="xs:w-full  tab:w-full lap:w-1/2 p-1">
+        <div class="card w-auto bg-base-100 px-auto" ref="afeeder">
           <div class="card-body p-0 md:p-4">
             <img v-if="UseLang.store.lang == 'pt'"
               src="../assets/images/home/2.png"

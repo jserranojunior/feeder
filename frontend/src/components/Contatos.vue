@@ -9,7 +9,7 @@
     </div>
 
     <div class="flex flex-wrap justify-between px-12 mt-6 py-6 bg-gray-500">
-      <div class="w-full md:w-1/2 px:0 md:px-6 py-4">
+      <div class="xs:w-full  tab:w-full lap:w-1/2 px:0 md:px-6 py-4">
         <div class="card bg-white shadow-xl mx-auto">
           <div class="card-body p-2 text-center">
             <div>
@@ -77,7 +77,7 @@ Get in touch</span>
           </div>
         </div>
       </div>
-      <div class="w-full md:w-1/2 px:0 md:px-6 py-4">
+      <div class="xs:w-full  tab:w-full lap:w-1/2 px:0 md:px-6 py-4">
         <div class="card bg-white shadow-xl mx-auto">
           <div class="card-body p-2">
             <iframe

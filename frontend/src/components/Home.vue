@@ -1,7 +1,8 @@
 <template>
+
     
 <!--    md:px-0 lg:px-0 2xl:px-80 2xl:mx-80 3xl:px-96 3xl:mx-96
- -->      <div class=" bg-white px-0 sml:px-0 md:px-0 lg:px-16 xl:px-80">
+ -->      <div class=" bg-white  xs:px-0 tab:px-12 lap:px-24 des:px-40 ult:px-96">
         <Navbar></Navbar>
         <Sobre></Sobre>
         <Infraestrutura></Infraestrutura>

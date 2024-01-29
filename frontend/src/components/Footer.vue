@@ -4,7 +4,7 @@
   >
 
   <div class="flex flex-wrap justify-between mx-auto">
-    <div class="w-full sm:w-1/4 mt-2">
+    <div class="xs:w-full  tab:w-full lap:w-1/4 mt-2">
       <img src="../assets/images/logo.png" width="60" alt="" />
 
       <p>
@@ -13,7 +13,7 @@
       </p>
     </div>
 
-    <div class="w-full sm:w-1/4 mx-auto">
+    <div class="xs:w-full  tab:w-full lap:w-1/4 mx-auto">
 
         <div class="footer-title text-center mx-auto">TÜV SÜD Verify</div>
       
@@ -30,7 +30,7 @@
     </div> 
     </div>
 
-    <div class="w-full sm:w-1/4 ">
+    <div class="xs:w-full  tab:w-full lap:w-1/4">
       <div class="flex flex-wrap">
        
       <div class="w-full mx-auto">
@@ -50,7 +50,7 @@
     </div>
     </div>
 
-    <div class="w-full sm:w-1/4">
+    <div class="xs:w-full  tab:w-full lap:w-1/24">
       <span class="footer-title">Social</span>
       <div class="grid grid-flow-col gap-4" v-if="state.domain != 'localhost'">
         <iframe

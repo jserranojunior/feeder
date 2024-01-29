@@ -1,6 +1,6 @@
 <template>
   <section id="certificados" class="mt-6">
-    <div class="py-4 px-8 mt-4 text-center">
+    <div class="py-4 px-8 mt-4 text-center mb-6 ">
       <span
         class="text-xl font-bold border-t border-b py-4 border-green-800 text-green-800"
         ><span v-if="UseLang.store.lang == 'pt'">Certificados</span>
@@ -8,10 +8,10 @@
       >
     </div>
     <div
-      class="flex flex-wrap px-12 justify-center bg-gradient-to-r from-primary via-green-500 to-blue-400 mt-6 mb-6 pb-6"
+      class="flex flex-wrap justify-center bg-gradient-to-r from-primary via-green-700 to-blue-500 shadow-xl"
     >
-      <div class="w-full px-2">
-        <div class="card md:w-1/3 bg-base-100 shadow-xl mt-6 mx-auto">
+      <div class="xs:w-full  tab:w-full lap:w-1/2 px-2 my-auto">
+        <div class="card bg-base-100 shadow-xl m-2 mx-auto xs:w-full  tab:w-full lap:w-3/4">
           <figure class="p-1">
             <img v-if="UseLang.store.lang == 'pt'"
               src="../assets/images/home/4.png"
@@ -32,10 +32,10 @@
           </figure>
         </div>
       </div>
-      <div class="w-full md:w-1/2 px-4">
+      <div class="xs:w-full  tab:w-full lap:w-1/2 p-4 bg-white">
         <a href="/static/img/certificados/7863ts.jpg" target="_blank">
           <div
-            class="card bg-base-100 shadow-xl mt-6 mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
+            class="card bg-base-100 xs:w-full  tab:w-full lap:w-7/12  mt-6 mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer"
           >
             <figure class="p-1">
               <img
