@@ -64,8 +64,15 @@
 
     <div class="flex flex-wrap mt-3 px-12 gap-1">
       <div class="w-full md:w-2/3 mx-auto">
-        <img
+        <img v-if="UseLang.store.lang == 'pt'"
           src="../assets/images/home/3.png"
+          class="mx-auto"
+          width="500"
+          height="500"
+          style="width: 100%"
+        />
+        <img v-else
+          src="../assets/images/home/en/3.png"
           class="mx-auto"
           width="500"
           height="500"
@@ -87,8 +94,8 @@
       <div class="mt-4 mx-auto">
         <label
           
-          class="btn animate-bounce"
-          @click="changeFabrica()"
+          class="btn btn-primary animate-bounce"
+          @click="UseFabrica.changeFabrica(true)"
         >
           <span v-if="UseLang.store.lang == 'pt'">Veja Mais</span>
           <span v-else>See More</span></label
@@ -103,14 +110,13 @@
   import { reactive } from "vue";
   import FabricaVue from "./FabricaModal.vue";
   import UseLang from "../composables/lang"
+  import UseFabrica from "../composables/fabrica"
 
   const state = reactive({
     showFabrica: false,
   });
 
-  function changeFabrica() {
-    state.showFabrica = true;
-  }
+
   
 </script>
 <style scoped></style>

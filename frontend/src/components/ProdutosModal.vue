@@ -1,9 +1,10 @@
 <template>
   <div>
-    <input type="checkbox" id="my-modal-produtos" class="modal-toggle" />
-    <label class="modal cursor-pointer p-0">
+    <input type="checkbox"   />
+    <label class="modal modal-open cursor-pointer p-0">
       <div class="modal-box w-11/12 max-w-5xl">
-        <h3 class="font-bold text-lg px-4 text-center">Produtos</h3>
+        <h3 class="font-bold text-lg px-4 text-center"><span v-if="UseLang.store.lang == 'pt'">Produtos</span
+        ><span v-else>Products</span></h3>
 
         <section class="overflow-hidden text-gray-700">
           <div class="container mx-auto p-2">
@@ -23,9 +24,10 @@
             </div>
           </div>
         </section>
-        <div class="modal-action py-0 pr-3">
+        <div class="modal-action py-0 pr-3" @click="UseProducts.changeProdutos(false)">
           <label class="btn btn-secondary"
-            >Fechar</label
+            ><span v-if="UseLang.store.lang == 'pt'">Fechar</span
+        ><span v-else>Close</span></label
           >
         </div>
       </div>
@@ -35,6 +37,8 @@
 
 <script lang="ts" setup>
   import { reactive, onBeforeMount } from "vue";
+  import UseLang from "../composables/lang"
+  import UseProducts from "../composables/products"
 
   const countImages = 29;
 

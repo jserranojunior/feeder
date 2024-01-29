@@ -2,10 +2,10 @@
 
   <div class="navbar bg-base-100 flex mx-0 px-0">
     <div class="navbar-start ">
-      <div class="xs:hidden lg:flex w-full px-6">
+      <div class="flex w-full px-6">
         <img src="../assets/images/logo.png" width="80" alt="" />
       </div>
-      <div class="dropdown text-center mx-auto">
+      <div class="dropdown text-center mx-auto xs:block md:hidden">
         <label
           tabindex="0"
           class="btn btn-primary text-gray-100 lg:hidden ml-auto"
@@ -73,7 +73,7 @@
         </ul>
       </div>
     </div>
-    <div class="navbar-end xs:hidden lg:flex w-full ">
+    <div class="navbar-end xs:hidden md:block w-full ">
       <ul class="menu menu-horizontal px-0 ">
         <li>
           <a href="#sobre">

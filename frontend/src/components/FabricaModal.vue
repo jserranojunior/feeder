@@ -1,10 +1,10 @@
 <template>
   <div>
-    <input type="checkbox" id="my-modal-fabrica" class="modal-toggle" />
-
-    <label  class="modal cursor-pointer p-0">
+    <input type="checkbox"  />
+    <label class="modal modal-open cursor-pointer p-0">
       <div class="modal-box w-11/12 max-w-5xl" for="">
-        <h3 class="font-bold text-lg px-4 text-center">Fábrica</h3>
+        <h3 class="font-bold text-lg px-4 text-center"><span v-if="UseLang.store.lang == 'pt'">Fábrica</span
+        ><span v-else>Products</span></h3>
 
         <section class="overflow-hidden text-gray-700">
           <div class="container mx-auto p-2">
@@ -24,8 +24,11 @@
             </div>
           </div>
         </section>
-        <div class="modal-action py-0 pr-3">
-          <label  class="btn btn-secondary">Fechar</label>
+        <div class="modal-action py-0 pr-3" @click="UseFabrica.changeFabrica(false)">
+          <label class="btn btn-secondary"
+            ><span v-if="UseLang.store.lang == 'pt'">Fechar</span
+        ><span v-else>Close</span></label
+          >
         </div>
       </div>
     </label>
@@ -34,7 +37,8 @@
 
 <script lang="ts" setup>
   import { reactive, onBeforeMount } from "vue";
-
+  import UseLang from "../composables/lang"
+  import UseFabrica from "../composables/fabrica"
   const countImages = 67;
 
   const state = reactive({
