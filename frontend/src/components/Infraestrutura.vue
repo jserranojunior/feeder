@@ -11,6 +11,8 @@
       >
     </div>
 
+
+
     <div class="flex flex-wrap mt-3  justify-center">
       <div class="w-full md:w-1/3 mx-auto px-2">
         <img v-if="UseLang.store.lang == 'pt'"
@@ -89,6 +91,15 @@
         />
       </div>
     </div>
+
+    <div class="flex justify-center my-4">
+    <div class="xs:w-full  tab:w-full lap:w-4/5 des:w-4/5 px-4 bg-black rounded-md shadow-lg ">
+      
+      <iframe class=""  width="100%" height="600" src="https://www.youtube.com/embed/y3IDX73B8sU?rel=0&autoplay=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
+    
+    </div>
+    
+   </div>
 
     <div class="flex mt-1 justify-end">
       <div class="mt-4 mx-auto">

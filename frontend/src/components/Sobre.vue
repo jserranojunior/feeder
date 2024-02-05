@@ -31,6 +31,8 @@ Among the machinery are injection molding machines, CNCs, presses, machines, and
         </div>
        
       </div>
+
+     
     </div>
 
     <div class="flex flex-wrap justify-center mt-4  px-12 shadow-md">
@@ -74,6 +76,8 @@ Among the machinery are injection molding machines, CNCs, presses, machines, and
         </div>
       </div>
     </div>
+
+   
   </section>
 </template>
 

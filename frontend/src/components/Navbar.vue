@@ -78,7 +78,7 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          class="menu menu-compact dropdown-content dropdown-end dropdown-left mt-3 p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
             <a><span>Home</span></a>
@@ -120,7 +120,8 @@
             </a>
           </li>
           <li>
-            <ButtonChangeLang></ButtonChangeLang>
+            <MiniButtonChangeLang></MiniButtonChangeLang>
+
           </li>
         </ul>
       </div>
@@ -131,6 +132,7 @@
 <script setup lang="ts">
 import ButtonChangeLang from "./ButtonChangeLang.vue";
 import UseLang from "../composables/lang";
+import MiniButtonChangeLang from "./MiniButtonChangeLang.vue";
 </script>
 
 <style scoped></style>
