@@ -11,13 +11,12 @@ services:
     image: "node:lts-alpine"
     working_dir: /app
     volumes:
-      - "${PATHCLIENTES}/feeder/front:/app"
+      - "${PATHCLIENTES}/feeder/frontend:/app"
     command: "yarn dev"
     networks:
       - stack_ponte
     ports:
-      - "3081:3000"
-    labels:
-      - "traefik.enable=true"
-      - traefik.http.routers.frontfeeder.rule=Host(`frontfeeder.${DOMAIN}`)
-      - traefik.http.services.frontfeeder.loadbalancer.server.port=3000
+      - "3082:3000"
+      
+      
+

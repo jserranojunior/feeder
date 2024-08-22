@@ -25,7 +25,7 @@
           </div>
         </section>
         <div class="modal-action py-0 pr-3" @click="UseFabrica.changeFabrica(false)">
-          <label class="btn btn-secondary"
+          <label class="btn btn-success bg-green-700 text-white"
             ><span v-if="UseLang.store.lang == 'pt'">Fechar</span
         ><span v-else>Close</span></label
           >

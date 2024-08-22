@@ -13,7 +13,7 @@
         />
       </div>
       <div class="w-full md:w-1/2 text-white my-auto px-auto xs:text-lg lap:text-xl desk:text-3xl p-2">
-        <div class="bg-gradient-to-r from-primary  rounded-xl via-green-700 to-green-700 p-4">
+        <div class="bg-gradient-to-r from-green-700  rounded-xl via-green-700 to-green-700 p-4">
           <span v-if="UseLang.store.lang == 'pt'">
           Mais de 200 máquinas de última geração, distribuidas em 15.000m² de área
         construída, em um terreno de 30.000m².
@@ -35,9 +35,9 @@ Among the machinery are injection molding machines, CNCs, presses, machines, and
      
     </div>
 
-    <div class="flex flex-wrap justify-center mt-4  px-12 shadow-md">
+    <div class="flex flex-wrap justify-center mt-4  px-12 xs:px-0 shadow-md">
    <div class="xs:w-full  tab:w-full lap:w-1/2  my-auto p-1 ">
-    <div class="card bg-base-100  px-auto" ref="card">
+    <div class="card bg-base-100  px-auto " ref="card">
         <div class="card-body">
           <h2 class="card-title text-3xl font-sans font-normal mb-4 text-green-700"><span v-if="UseLang.store.lang == 'pt'">Seja Bem-vindo à Feeder</span>
             <span v-else>Welcome to Feeder</span></h2>

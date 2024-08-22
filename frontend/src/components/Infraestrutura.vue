@@ -95,8 +95,8 @@
     <div class="flex justify-center my-4">
     <div class="xs:w-full  tab:w-full lap:w-4/5 des:w-4/5 px-4 bg-black rounded-md shadow-lg ">
       
-      <iframe class=""  width="100%" height="600" src="https://www.youtube.com/embed/y3IDX73B8sU?rel=0&autoplay=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
-    
+       <iframe class=""  width="100%" height="600" src="https://www.youtube.com/embed/y3IDX73B8sU?rel=0&autoplay=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
+  
     </div>
     
    </div>
@@ -105,7 +105,7 @@
       <div class="mt-4 mx-auto">
         <label
           
-          class="btn btn-primary animate-bounce"
+          class="btn btn-success bg-green-700 text-white animate-bounce"
           @click="UseFabrica.changeFabrica(true)"
         >
           <span v-if="UseLang.store.lang == 'pt'">Veja Mais</span>

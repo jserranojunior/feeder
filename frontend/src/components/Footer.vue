@@ -50,7 +50,7 @@
     </div>
     </div>
 
-    <div class="xs:w-full  tab:w-full lap:w-1/24">
+    <div class="xs:w-full  tab:w-full lap:w-1/4">
       <span class="footer-title">Social</span>
       <div class="grid grid-flow-col gap-4" v-if="state.domain != 'localhost'">
         <iframe
@@ -82,6 +82,16 @@ const state = reactive({
   domain: window.location.hostname
 })
 
+
+/*   function verifyUrl(){
+  const urlAtual = window.location.href;
+  const urlDesejada = "https://feeder.com.br";
+  if(urlAtual.trim() === urlDesejada){
+  return true
+  }else{
+    return false
+  }
+} */
 
 </script>
 

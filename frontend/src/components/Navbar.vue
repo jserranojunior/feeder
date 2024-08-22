@@ -1,15 +1,15 @@
 <template>
  
-  <div class="mt-2 bg-base-100 flex mx-0 px-0">
-    <div class="w-full">
+  <div class="mt-2 bg-base-100 flex mx-0 px-0 flex">
+    <div class=" md:w-1/4">
       <div class="flex w-full px-6">
         <img src="../assets/images/logo.png" width="80" alt="" />
       </div>
     </div>
-    <div class="w-full ">
+    <div class="w-full  md:w-3/4">
       <div class="xs:hidden tab:hidden lap:block ">
-        <div class="w-1/2 ml-auto">
-          <ul class="menu right-full float-right left-0 menu-horizontal ">
+        <div class="w-full ml-auto">
+          <ul class="menu right-full float-right left-0 menu-horizontal text-base ">
           <li class="">
             <a href="#sobre">
               <span v-if="UseLang.store.lang == 'pt'">Sobre</span>
@@ -35,6 +35,12 @@
             </a>
           </li>
           <li>
+            <a href="#documentos">
+              <span v-if="UseLang.store.lang == 'pt'">Documentos</span>
+              <span v-else>Documents</span>
+            </a>
+          </li>
+          <li>
             <a href="#premios">
               <span v-if="UseLang.store.lang == 'pt'">Prêmios</span>
               <span v-else>Awards</span>
@@ -56,10 +62,10 @@
         </ul>
         </div>
       </div>
-      <div class="dropdown text-center mx-auto xs:flex tab:flex lap:hidden">
+      <div class="dropdown text-center mx-auto xs:flex tab:flex lap:hidden ">
         <label
           tabindex="0"
-          class="btn btn-primary text-gray-100 lg:hidden ml-auto"
+          class="btn btn-success bg-green-700 text-white text-gray-100 lg:hidden ml-auto mr-3"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -105,6 +111,12 @@
             <a href="#certificados">
               <span v-if="UseLang.store.lang == 'pt'">Certificados</span>
               <span v-else>Certificates</span>
+            </a>
+          </li>
+          <li>
+            <a href="#documentos">
+              <span v-if="UseLang.store.lang == 'pt'">Documentos</span>
+              <span v-else>Documents</span>
             </a>
           </li>
           <li>
