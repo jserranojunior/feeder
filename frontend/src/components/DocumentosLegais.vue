@@ -6,20 +6,23 @@
         ><span v-if="UseLang.store.lang == 'pt'">Documentos</span
         ><span v-else>Documents</span></span
       >
-    </div> 
-    
+    </div>
+
     <div class="flex flex-wrap mt-4">
-      <div :class="[
-      'w-full px-4',
-      isMobileDevice() ? ' md:w-1/2 mx-auto' : ' md:w-1/2'
-    ]">
+      <div
+        :class="[
+          'w-full px-4',
+          isMobileDevice() ? ' md:w-1/2 mx-auto' : ' md:w-1/2',
+        ]"
+      >
         <div
           role="alert"
           class="alert mt-2 cursor-pointer p-3 hover:bg-gray-200"
           v-for="documento in documentos"
           @click="changePDF(documento.pdf)"
         >
-          <svg class=" text-red-700"
+          <svg
+            class="text-red-700"
             xmlns="http://www.w3.org/2000/svg"
             width="1.3em"
             height="1.3em"
@@ -58,22 +61,19 @@ const state = reactive({
   documentoSelecionado: "",
 });
 
-
 function changePDF(pdf: string) {
-  if(isMobileDevice()){
-    window.open(pdf, '_blank', 'noopener,noreferrer');
-
-  }else{
+  if (isMobileDevice()) {
+    window.open(pdf, "_blank", "noopener,noreferrer");
+  } else {
     state.documentoSelecionado = pdf;
-
   }
-
 }
 
 function isMobileDevice(): boolean {
   // Regex para detectar dispositivos móveis
-  const mobileRegex = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
- return mobileRegex.test(navigator.userAgent); 
+  const mobileRegex =
+    /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return mobileRegex.test(navigator.userAgent);
 }
 
 /* TRANSPARENCIA.pdf */
@@ -89,7 +89,7 @@ const documentos = [
   },
   {
     name: "CLI - Licenciamento Integrado",
-    pdf:"/static/pdf/CLI.pdf"
+    pdf: "/static/pdf/CLI.pdf",
   },
   {
     name: "AVCB – Vistoria Corpos de Bombeiros",
@@ -120,7 +120,7 @@ const documentos = [
     pdf: "/static/pdf/SAQ.pdf",
   },
   {
-    name: "Selo EVOVADIS de Sustentabilidade",
+    name: "Selo ECOVADIS - Sustentabilidade",
     pdf: "/static/pdf/ECOVADIS.pdf",
   },
   {
@@ -133,9 +133,7 @@ const documentos = [
   },
   {
     name: "CADRI - Ambiental",
-    pdf:"/static/pdf/CADRI.pdf"
+    pdf: "/static/pdf/CADRI.pdf",
   },
-  
-
 ];
 </script>
