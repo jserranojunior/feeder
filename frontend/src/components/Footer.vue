@@ -17,15 +17,9 @@
       <div class="xs:w-full tab:w-full lap:w-1/4 mx-auto mt-8">
         <!--         <div class="footer-title text-center mx-auto">TÜV SÜD Verify</div>
  -->
-        <div class="card w-24 shadow-xl p-0 mx-auto">
+        <div class="card w-36 shadow-xl p-0 mx-auto">
           <div class="card-body p-0 bg-white rounded-lg">
-            <img
-              src="/static/img/tuv.jpeg"
-              class="mt-1"
-              style="width: 100%"
-              width="100"
-              height="100"
-            />
+            <img src="/static/img/iaft.jpeg" class="mt-1" style="width: 100%" />
           </div>
         </div>
       </div>

@@ -104,6 +104,10 @@ const documentos = [
     pdf: "/static/pdf/LGPD.pdf",
   },
   {
+    name: "Política da Qualidade, SSMA, Antissuborno e Anticorrupção",
+    pdf: "/static/pdf/politicas.pdf",
+  },
+  {
     name: "Certificado IATF",
     pdf: "/static/pdf/IATF.pdf",
   },
