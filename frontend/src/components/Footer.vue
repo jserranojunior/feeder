@@ -3,7 +3,7 @@
     class="px-12 md:px-20 py-6 bg-neutral text-neutral-content align-center justify-between"
   >
     <div class="flex flex-wrap justify-between mx-auto">
-      <div class="xs:w-full tab:w-full lap:w-1/4 mt-2">
+      <div class="xs:w-full tab:w-full lap:w-1/5 mt-2">
         <img src="../assets/images/logo.png" width="60" alt="" />
 
         <p>
@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div class="xs:w-full tab:w-full lap:w-1/4 mx-auto mt-8">
+      <div class="xs:w-full tab:w-full lap:w-1/5 mx-auto mt-8">
         <!--         <div class="footer-title text-center mx-auto">TÜV SÜD Verify</div>
  -->
         <div class="card w-36 shadow-xl p-0 mx-auto">
@@ -23,8 +23,18 @@
           </div>
         </div>
       </div>
-
-      <div class="xs:w-full tab:w-full lap:w-1/4">
+      <div class="xs:w-full tab:w-full lap:w-1/5 mx-auto mt-2">
+        <div class="card w-36 shadow-xl p-0 mx-auto">
+          <div class="card-body p-0 rounded-lg">
+            <img
+              src="/static/img/certificados/iqaselo.jpeg"
+              class="mx-auto"
+              style="width: 70%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="xs:w-full tab:w-full lap:w-1/5">
         <div class="flex flex-wrap">
           <div class="w-full mx-auto">
             <div class="text-center mx-auto">D&B D-U-N-S® Registered™</div>
@@ -49,7 +59,7 @@
         </div>
       </div>
 
-      <div class="xs:w-full tab:w-full lap:w-1/4">
+      <div class="xs:w-full tab:w-full lap:w-1/5">
         <span class="footer-title">Social</span>
         <div
           class="grid grid-flow-col gap-4"

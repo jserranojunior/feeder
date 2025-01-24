@@ -112,6 +112,10 @@ const documentos = [
     pdf: "/static/pdf/IATF.pdf",
   },
   {
+    name: "Certificado 14001",
+    pdf: "/static/pdf/iqa.pdf",
+  },
+  {
     name: "Selo Verde de Energia",
     pdf: "/static/pdf/SELOVERDE.pdf",
   },
