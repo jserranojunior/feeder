@@ -1,18 +1,32 @@
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import tailwindcss from '@tailwindcss/vite'
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+import daisyui from 'daisyui';
 
-        import vue from '@vitejs/plugin-vue'
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-const commonConfig = {
-  plugins: [
-    vue(),
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  ],
-  resolve: {
-    alias: [{ find: '@', replacement: '/src' }],
-  },
-}
+export default defineConfig(({ command }) => {
+  // Configurações comuns a todos os ambientes
+  const commonConfig = {
+    plugins: [
+      vue(),
+       tailwindcss(),
+    ],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      },
+    },
+  
+  };
 
-export default ({ command }) => {
   if (command === 'serve') {
     return {
       ...commonConfig,
@@ -20,35 +34,49 @@ export default ({ command }) => {
         host: '0.0.0.0',
         port: 3082,
         https: false,
-      }
-    }
-  } else if (command === 'build') {
-    return {
-      ...commonConfig,
-      server: {
-        host: '0.0.0.0',
-        port: 5000,
-        https: true,
-        hmr: { host: '"https://feeder.com.br', port: 443 },
       },
-      build: {
-        target: 'esnext',
-        chunkSizeWarningLimit: 2000,
-      },
-    }
-  } else if (command === 'testbuild') {
-    return {
-      ...commonConfig,
-      server: {
-        host: '0.0.0.0',
-        port: 5000,
-        https: true,
-        hmr: { host: 'https://feeder.alvitre.com.br', port: 443 },
-      },
-      build: {
-        target: 'esnext',
-        chunkSizeWarningLimit: 2000,
-      },
-    }
+    };
   }
-}
+
+  if (command === 'build') {
+    return {
+      ...commonConfig,
+      server: {
+        host: '0.0.0.0',
+        port: 5000,
+        https: true,
+        hmr: { 
+          host: 'feeder.com.br', 
+          port: 443,
+          protocol: 'wss' 
+        },
+      },
+      build: {
+        target: 'esnext',
+        chunkSizeWarningLimit: 2000,
+      },
+    };
+  }
+
+  if (command === 'testbuild') {
+    return {
+      ...commonConfig,
+      server: {
+        host: '0.0.0.0',
+        port: 5000,
+        https: true,
+        hmr: { 
+          host: 'feeder.alvitre.com.br', 
+          port: 443,
+          protocol: 'wss'
+        },
+      },
+      build: {
+        target: 'esnext',
+        chunkSizeWarningLimit: 2000,
+      },
+    };
+  }
+
+  return commonConfig;
+});

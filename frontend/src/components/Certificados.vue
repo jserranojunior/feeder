@@ -9,9 +9,9 @@
       <div class="xs:w-full tab:w-full lap:w-1/2 px-2 my-auto">
         <div class="card bg-base-100 shadow-xl m-2 mx-auto xs:w-full tab:w-full lap:w-3/4">
           <figure class="p-1">
-            <img v-if="UseLang.store.lang == 'pt'" src="../assets/images/home/4.png" alt="Shoes" class="rounded-xl"
+            <img v-if="UseLang.store.lang == 'pt'" src="/static/img/home/4.png" alt="Shoes" class="rounded-xl"
               width="500" height="500" style="width: 100%" />
-            <img v-else src="../assets/images/home/en/4.png" alt="Shoes" class="rounded-xl" width="500" height="500"
+            <img v-else src="/static/img/home/en/4.png" alt="Shoes" class="rounded-xl" width="500" height="500"
               style="width: 100%" />
           </figure>
         </div>
@@ -47,7 +47,7 @@
       <div class="xs:w-full tab:w-full lap:w-1/2 px-2 my-auto">
         <div class="card bg-base-100 shadow-xl m-2 mx-auto xs:w-full tab:w-full lap:w-3/4">
           <figure class="p-1">
-            <img src="../assets/images/home/certificadoselo14001.jpeg" alt="Shoes" class="rounded-xl" width="500"
+            <img src="/static/img/home/certificadoselo14001.jpeg" alt="Shoes" class="rounded-xl" width="500"
               height="500" style="width: 100%" />
           </figure>
         </div>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <div class="xs:w-full tab:w-full lap:w-1/2 p-4 bg-white">
-        <a href="/public/static/img/certificados/tisax.png" target="_blank">
+        <a href="/static/img/certificados/tisax.png" target="_blank">
           <div
             class="card bg-base-100 xs:w-full tab:w-full lap:w-7/12 mt-6 mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
             <figure class="p-1">

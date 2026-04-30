@@ -1,10 +1,10 @@
 <template>
   <footer
-    class="px-12 md:px-20 py-6 bg-neutral text-neutral-content align-center justify-between"
+    class="px-12 md:px-20 py-6 bg-gray-800 text-neutral-content align-center justify-between"
   >
     <div class="flex flex-wrap justify-between mx-auto">
       <div class="xs:w-full tab:w-full lap:w-1/5 mt-2">
-        <img src="../assets/images/logo.png" width="60" alt="" />
+        <img src="/static/img/logo.png" width="60" alt="" />
 
         <p>
           Feeder Industria LTDA<br />Copyright © 2024 -

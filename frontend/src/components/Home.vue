@@ -1,7 +1,10 @@
 <template>
-
+<div class="flex justify-center">
 <!--    md:px-0 lg:px-0 2xl:px-80 2xl:mx-80 3xl:px-96 3xl:mx-96
- -->      <div class=" bg-white  xs:px-0 tab:px-12 lap:px-24 des:px-40 ult:px-96">
+ -->      <div 
+             class="w-full sm:w-full md:w-full lg:w-11/12 xl:w-10/12 2xl:w-10/12 ult:w-7/12"
+
+       >
         <Navbar></Navbar>
         <Sobre></Sobre>
         <Infraestrutura></Infraestrutura>
@@ -16,7 +19,7 @@
         <BtnToTop></BtnToTop>
         <Notifications></Notifications>
    </div>
-    
+    </div>
 
 </template>
 <script setup lang="ts">

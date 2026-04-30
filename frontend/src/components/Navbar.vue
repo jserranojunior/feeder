@@ -1,58 +1,58 @@
 <template>
- 
-  <div class="mt-2 bg-base-100 flex mx-0 px-0 flex">
+
+  <div class="mt-4 bg-base-100 flex mx-0 px-0 flex">
     <div class=" md:w-1/4">
       <div class="flex w-full px-6">
-        <img src="../assets/images/logo.png" width="80" alt="" />
+        <img src="/static/img/logo.png" width="80" alt="" />
       </div>
     </div>
     <div class="w-full  md:w-3/4">
-      <div class="xs:hidden tab:hidden lap:block ">
+      <div class="xs:hidden lap:block ">
         <div class="w-full ml-auto">
           <ul class="menu right-full float-right left-0 menu-horizontal text-base ">
-          <li class="">
+          <li class="text-lg">
             <a href="#sobre">
               <span v-if="UseLang.store.lang == 'pt'">Sobre</span>
               <span v-else>About</span>
             </a>
           </li>
-          <li>
+          <li class="text-lg">
             <a href="#infraestrutura">
               <span v-if="UseLang.store.lang == 'pt'">Infraestrutura</span>
               <span v-else>Infrastructure</span>
             </a>
           </li>
-          <li>
+          <li class="text-lg">
             <a href="#clientes">
               <span v-if="UseLang.store.lang == 'pt'">Clientes</span>
               <span v-else>Clients</span>
             </a>
           </li>
-          <li>
+          <li class="text-lg">
             <a href="#certificados">
               <span v-if="UseLang.store.lang == 'pt'">Certificados</span>
               <span v-else>Certificates</span>
             </a>
           </li>
-          <li>
+          <li class="text-lg">
             <a href="#documentos">
               <span v-if="UseLang.store.lang == 'pt'">Documentos</span>
               <span v-else>Documents</span>
             </a>
           </li>
-          <li>
+          <li class="text-lg">
             <a href="#premios">
               <span v-if="UseLang.store.lang == 'pt'">Prêmios</span>
               <span v-else>Awards</span>
             </a>
           </li>
-          <li>
+          <li class="text-lg">
             <a href="#contato">
               <span v-if="UseLang.store.lang == 'pt'">Contato</span>
               <span v-else>Contact</span>
             </a>
           </li>
-          <li >
+          <li class="text-lg">
             <div class="bg-white hover:bg-white pr-0">
               <div class="dropdown w-auto max-w-xs dropdown-end">
                 <ButtonChangeLang></ButtonChangeLang>
@@ -62,7 +62,7 @@
         </ul>
         </div>
       </div>
-      <div class="dropdown text-center mx-auto xs:flex tab:flex lap:hidden ">
+      <div class="dropdown text-center mx-auto xs:flex lap:hidden ">
         <label
           tabindex="0"
           class="btn btn-success bg-green-700 text-white text-gray-100 lg:hidden ml-auto mr-3"

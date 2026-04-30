@@ -1,6 +1,6 @@
 <template>
   
-      <label tabindex="0" class="btn btn-sm btn-outline btn-success  text-white h-full "> <a
+      <label tabindex="0" class="btn btn-sm btn-outline btn-success  text-black hover:text-white  h-full "> <a
               ><span v-if="UseLang.store.lang == 'pt'">
                 <img class="mr-2"
               width="22"
