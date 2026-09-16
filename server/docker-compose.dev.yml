@@ -5,14 +5,15 @@ networks:
     external: true
 
 services:
+
   frontend_feeder:
-    container_name: "frontend_feeder"
-    image: "node:lts-alpine"
+    container_name: "frontend_feede"
+    image: "node:lts"
     working_dir: /app
     volumes:
-      - "${PATHCLIENTES}/feeder/frontend:/app"
+      - "${DEVPATHCLIENTES}/feeder/frontend:/app"
     command: "yarn dev"
     networks:
       - stack_ponte
     ports:
-      - "3077:3000"
+      - "3077:3082"

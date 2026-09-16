@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="icon" type="image/png" href="./anhanguera.jpg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidade Anhanguera - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .login-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+ <table>
+ <tr>
+ <td>
+ <div class="login-container">
+ <img src="./Cabecalho.jpg" alt="Cabeçalho" class="header">
+ </div>
+ </td>
+ </tr>
+ <tr>
+ <td>
+	<div class="login-container">
+    <h2>Login Aluno Anhanguera</h2>
+    <input type="text" id="username" placeholder="Usuário (CPF)">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+ </div>
+ </td>
+ </tr>
+ <td>
+    <div class="login-container">
+    <img src="./Rodape.jpg" alt="Rodapé" class="footer">
+ </div>
+ </td>
+ </td>
+ </table>
+  <script>
+    function login() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+
+      // Lista de usuários válidos com senhas
+      const users = {
+        '34772497803': '34772497803',
+        '34621029827': '34621029827',
+        '37414295893': '37414295893',
+		'38269831816': '38269831816'
+		};
+
+      if (users[username] && users[username] === password) {
+        // Redireciona para a página personalizada
+        window.location.href = `menu_${username}.html`;
+      } else {
+        alert('Usuário ou senha incorretos!');
+      }
+    }
+  </script>
+</body>
+</html>

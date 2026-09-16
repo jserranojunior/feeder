@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="icon" type="image/png" href="./anhanguera.jpg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidade Anhanguera - Área do Aluno</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      transition: background 0.3s;
+    }
+    li:hover {
+      background-color: #d0e6da;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+<table>
+ <tr>
+ <td>
+ <div class="login-container">
+ <img src="./Cabecalho.jpg" alt="Cabeçalho" class="header">
+  </div>
+ </td>
+ </tr>
+  <tr> 
+   <td>
+  <h1>Bem-vindo, Flavio Kadota!</h1>
+  <ul>
+    <li onclick="alert('Abrindo Dados do Aluno')">Dados do Aluno</li>
+    <li onclick="alert('Abrindo Curso')">Curso</li>
+    <li onclick="window.open('carteirinha_34772497803.pdf', '_blank')">Carteirinha</li>
+    <li onclick="alert('Abrindo Notas')">Notas</li>
+    <li onclick="alert('Abrindo Financeiro')">Financeiro</li>
+  </ul>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div class="login-container">
+  <img src="./Rodape.jpg" alt="Rodapé" class="footer">
+  </div>
+  </td>
+    </tr>
+  </table>
+</table>
+
+
+</body>
+</html>

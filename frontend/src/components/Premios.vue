@@ -9,28 +9,24 @@
 
     <div class="flex flex-wrap">
 
-
+      <!-- CARD 1 - Qualitas (Especial com 2 imagens) -->
       <div class="xs:w-full tab:w-full lap:w-1/3 mt-6 px-2">
-        <div class="card bg-base-100 shadow-xl rounded-lg h-full">
-          <div class="card-body p-4">
-            <h2 class="text-xl font-bold text-center">Qualitas Fiat Chrysler</h2>
-            <div class="flex flex-wrap justify-center ">
-              <div class="w-1/2 flex justify-center h-60">
-                <img src="/static/img/premios/p01.png" width="180" class="w-auto mt-3" />
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4">Qualitas Fiat Chrysler</h2>
+            
+            <!-- Área da Imagem e Hover -->
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <div class="flex w-full justify-center gap-4 transition-transform duration-500 group-hover:scale-105">
+                <img src="/static/img/premios/p01.png" class="h-48 w-auto object-contain" />
+                <img src="/static/img/premios/p02.png" class="h-48 w-auto object-contain" />
               </div>
-              <div class="w-1/2 flex justify-center h-60">
-                <img src="/static/img/premios/p02.png" width="180" class="w-auto mt-3" />
-              </div>
-            </div>
-            <div class="mt-4 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-600 h-full">
-              <div class="card-body text-white text-lg  p-4">
-                <p>
-                  <span v-if="UseLang.store.lang == 'pt'">
-                    O Prêmio Top of Quality Brazil, pela Cia. Eventos & Pesquisas, destaca o alto padrão de excelência e qualidade em serviços e produtos, reconhecendo empresas e profissionais que geram resultados positivos no mercado globalizado.
-                  </span>
-                  <span v-else>
-                    The Top of Quality Brazil Award, presented by Cia. Eventos & Pesquisas, highlights the high standard of excellence and quality in services and products, recognizing companies and professionals that generate positive results in the global market.
-                  </span>
+
+              <!-- Overlay que aparece no Hover -->
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">O Prêmio Top of Quality Brazil destaca o alto padrão de excelência e qualidade em serviços e produtos.</span>
+                  <span v-else>The Top of Quality Brazil Award highlights the high standard of excellence and quality in services and products.</span>
                 </p>
               </div>
             </div>
@@ -38,22 +34,17 @@
         </div>
       </div>
 
-
+      <!-- CARD 2 - Qualitas Simples -->
       <div class="xs:w-full tab:w-full lap:w-1/3 mt-6 px-2">
-        <div class="card bg-base-100 shadow-xl rounded-lg h-full">
-          <div class="card-body p-4">
-            <h2 class="text-xl font-bold text-center">Qualitas Fiat Chrysler</h2>
-            <div class="flex justify-center h-60">
-              <img src="/static/img/premios/07.png" width="120" class="w-auto mt-3" />
-            </div>
-            <div class="mt-4 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-600 h-full">
-              <div class="card-body text-white text-lg  p-4  ">
-                <p>
-                  <span v-if="UseLang.store.lang == 'pt'">
-O prêmio Qualitas Fiat Chrysler destaca os fornecedores com melhor desempenho em qualidade, inovação, competitividade e nível de serviço, reconhecendo a consistência dos resultados e o compromisso com os padrões da indústria automotiva.                  </span>
-                  <span v-else>
-                    The Qualitas Fiat Chrysler Award highlights suppliers with the best performance in quality, innovation, competitiveness, and level of service, recognizing consistency of results and commitment to automotive industry standards.
-                  </span>
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4">Qualitas Fiat Chrysler</h2>
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <img src="/static/img/premios/07.png" class="h-56 w-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">Destaque para fornecedores com melhor desempenho em qualidade, inovação e compromisso com os padrões automotivos.</span>
+                  <span v-else>Highlights suppliers with best performance in quality, innovation and commitment to automotive standards.</span>
                 </p>
               </div>
             </div>
@@ -61,23 +52,17 @@ O prêmio Qualitas Fiat Chrysler destaca os fornecedores com melhor desempenho e
         </div>
       </div>
 
-
+      <!-- CARD 3 - Lear -->
       <div class="xs:w-full tab:w-full lap:w-1/3 mt-6 px-2">
-        <div class="card bg-base-100 shadow-xl rounded-lg h-full">
-          <div class="card-body p-4">
-            <h2 class="text-xl font-bold text-center">Lear: Fornecedor Destaque em Inovação</h2>
-            <div class="flex justify-center h-60">
-              <img src="/static/img/premios/p03.png" width="200" class="w-auto mt-3" />
-            </div>
-            <div class="mt-4 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-600 h-full">
-              <div class="card-body text-white text-lg  p-4">
-                <p>
-                  <span v-if="UseLang.store.lang == 'pt'">
-                    O prêmio celebra empresas que impulsionam a modernização da indústria por meio de soluções tecnológicas disruptivas e do fortalecimento de parcerias estratégicas duradouras.
-                  </span>
-                  <span v-else>
-                    The award celebrates companies that drive industry modernization through disruptive technological solutions and the strengthening of long-term strategic partnerships.
-                  </span>
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4 leading-tight">Lear: Inovação</h2>
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <img src="/static/img/premios/p03.png" class="h-56 w-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">Celebra empresas que impulsionam a modernização da indústria por meio de soluções disruptivas.</span>
+                  <span v-else>Celebrates companies that drive industry modernization through disruptive solutions.</span>
                 </p>
               </div>
             </div>
@@ -85,22 +70,17 @@ O prêmio Qualitas Fiat Chrysler destaca os fornecedores com melhor desempenho e
         </div>
       </div>
 
-      <div class="xs:w-full tab:w-full lap:w-1/3 mt-6 px-2">
-        <div class="card bg-base-100 shadow-xl rounded-lg h-full">
-          <div class="card-body p-4">
-            <h2 class="text-xl font-bold text-center">G-KT: Destaque de Fornecedores</h2>
-            <div class="flex justify-center h-60">
-              <img src="/static/img/premios/p04.png" width="180" class="w-auto mt-3" />
-            </div>
-            <div class="mt-4 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-600 h-full">
-              <div class="card-body text-white text-lg  p-4">
-                <p>
-                  <span v-if="UseLang.store.lang == 'pt'">
-                    Esta honraria reconhece parceiros que atingiram a excelência operacional através do rigoroso controle de qualidade e da precisão logística no cumprimento de prazos de entrega.
-                  </span>
-                  <span v-else>
-                    This recognition honors partners who achieve operational excellence through strict quality control and logistical precision in meeting delivery deadlines.
-                  </span>
+      <!-- CARD 4 - G-KT -->
+      <div class="xs:w-full tab:w-full lap:w-1/4 mt-6 px-2">
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4">G-KT: Destaque</h2>
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <img src="/static/img/premios/p04.png" class="h-56 w-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">Reconhece parceiros que atingiram a excelência operacional e rigoroso controle de qualidade.</span>
+                  <span v-else>Recognizes partners who achieve operational excellence and strict quality control.</span>
                 </p>
               </div>
             </div>
@@ -108,23 +88,17 @@ O prêmio Qualitas Fiat Chrysler destaca os fornecedores com melhor desempenho e
         </div>
       </div>
 
-
-      <div class="xs:w-full tab:w-full lap:w-1/3 mt-6 px-2">
-        <div class="card bg-base-100 shadow-xl rounded-lg h-full">
-          <div class="card-body p-4">
-            <h2 class="text-xl font-bold text-center">REI: Tecnologia da Informação e Software</h2>
-            <div class="flex justify-center h-60">
-              <img src="/static/img/premios/p05.png" width="200" class="w-auto mt-3" />
-            </div>
-            <div class="mt-4 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-600 h-full">
-              <div class="card-body text-white text-lg  p-4">
-                <p>
-                  <span v-if="UseLang.store.lang == 'pt'">
-                    Este reconhecimento valida a maturidade digital de finalistas que desenvolvem sistemas inteligentes voltados para a gestão sistêmica da produção e inovação no setor automobilístico.
-                  </span>
-                  <span v-else>
-                    This recognition validates the digital maturity of finalists who develop intelligent systems focused on production management and innovation in the automotive sector.
-                  </span>
+      <!-- CARD 5 - REI -->
+      <div class="xs:w-full tab:w-full lap:w-1/4 mt-6 px-2">
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4 leading-tight">REI: TI e Software</h2>
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <img src="/static/img/premios/p05.png" class="h-56 w-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">Valida a maturidade digital de finalistas que desenvolvem sistemas inteligentes de produção.</span>
+                  <span v-else>Validates the digital maturity of finalists who develop intelligent production systems.</span>
                 </p>
               </div>
             </div>
@@ -132,23 +106,35 @@ O prêmio Qualitas Fiat Chrysler destaca os fornecedores com melhor desempenho e
         </div>
       </div>
 
-
-      <div class="xs:w-full tab:w-full lap:w-1/3 mt-6 px-2">
-        <div class="card bg-base-100 shadow-xl rounded-lg h-full">
-          <div class="card-body p-2">
-            <h2 class="text-xl font-bold text-center">Woodbridge Brasil: Fornecedor Destaque</h2>
-            <div class="flex justify-center h-60">
-              <img src="/static/img/premios/p06.png" width="180" class=" w-auto mt-3" />
+      <!-- CARD 6 - Woodbridge -->
+      <div class="xs:w-full tab:w-full lap:w-1/4 mt-6 px-2">
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4">Suplier Day</h2>
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <img src="/static/img/premios/p06.png" class="h-56 w-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">Certifica o alto desempenho técnico e a excelência no atendimento de fornecedores.</span>
+                  <span v-else>Certifies high technical performance and excellence in supplier service.</span>
+                </p>
+              </div>
             </div>
-            <div class="mt-4 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-600 h-full">
-              <div class="card-body text-white text-lg  p-4">
-                <p>
-                  <span v-if="UseLang.store.lang == 'pt'">
-                    A premiação certifica o alto desempenho técnico e a excelência no atendimento de fornecedores que alinham ciência e processos para servir às demandas da companhia.
-                  </span>
-                  <span v-else>
-                    The award certifies high technical performance and excellence in service from suppliers who align science and processes to meet company demands.
-                  </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 - Woodbridge (P08) -->
+      <div class="xs:w-full tab:w-full lap:w-1/4 mt-6 px-2">
+        <div class="card bg-base-100 shadow-xl rounded-lg overflow-hidden group">
+          <div class="card-body p-4 relative">
+            <h2 class="text-xl font-bold text-center mb-4">Woodbridge Brasil</h2>
+            <div class="relative h-72 flex items-center justify-center overflow-hidden rounded-xl">
+              <img src="/static/img/premios/p08.png" class="h-56 w-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-green-700/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center p-4">
+                <p class="text-white text-center text-sm">
+                  <span v-if="UseLang.store.lang == 'pt'">Reconhecimento como Fornecedor Destaque 2021 na categoria metálicos, premiando a excelência da Feeder Industrial em qualidade e fornecimento técnico.</span>
+                  <span v-else>Recognized as 2021 Outstanding Supplier in the metals category, honoring Feeder Industrial's excellence in quality and technical supply.</span>
                 </p>
               </div>
             </div>
